@@ -1,0 +1,1066 @@
+{
+    "data": {
+        "mainTitle": "SneakerHead",
+
+        "moreItems": {
+
+            "purchaseItemIds": [{
+                    "id": "0",
+                    "mainId": "0"
+                },
+                {
+                    "id": "2",
+                    "mainId": "1"
+                },
+                {
+                    "id": "5",
+                    "mainId": "2"
+                }
+
+            ],
+            "bookmarks": [
+
+                {
+                    "id": "7",
+                    "mainId": "0",
+                    "title": "What a Lego x Nike SB collab looks like",
+                    "sub": "Nike",
+                    "price": "",
+                    "isArticle": true,
+                    "coverImage": "https://lh5.googleusercontent.com/rTVGaHE5sKqlFYnIfhBQOccgzKITqPFlqKnYlvSpZbnk58a4pAD78FQYeWavZjdnLZ02nr6klcuioGxGJpkfFJIdgYKXEWtPA-giaNhhSaeoe-7gLthv_HGLXOXVhMdWSBKAgy5jfA"
+                },
+                {
+                    "id": "30",
+                    "mainId": "0",
+                    "title": "Hermès store opens in Harbour City, Hong Kong",
+                    "sub": "HERMES",
+                    "price": "",
+                    "isArticle": true,
+                    "coverImage": "https://lh6.googleusercontent.com/gebgmzOO45NcqT9ZOOTVxLCyPvOkQ5Ut8LjrZIn5cSNZxR7MkphjES4Fte5oHGCJvzqeJ5Cb-jovPTBjQHHxE3NIYz5qY63kvQBH0jUAGF4sUZvbQk7V9H1eExRZ7rZrwHRVSCMiRQ"
+                },
+
+                {
+                    "id": "3",
+                    "mainId": "1",
+                    "title": "PRE-ORDER",
+                    "sub": "Thought Catalog - White T Shirt",
+                    "price": "18",
+                    "isArticle": false,
+                    "coverImage": "https://lh6.googleusercontent.com/a17Ih8ynhNblynT8lqlEGpzbsSbZfYG70V8f7G5fsuOfMB6Fw7s_GD_Z_R7itI2gMAEX2axXcuqUTJxFDU4WC-IE82mrturx-4VljvX7Y9PAaxBkXdg_cSAKfiD5d0ObC0odmmmnbw"
+                },
+                {
+                    "id": "32",
+                    "mainId": "1",
+                    "title": "Gucci is selling upside-down glasses for £470 and people are confused",
+                    "sub": "Gucci News",
+                    "price": "",
+                    "isArticle": true,
+                    "coverImage": "https://lh3.googleusercontent.com/R5MdlHcpFxGG2CGVWll5mstIcyZbTWqcsVWkofFGr_lrQlt4TKSXCEWCzoGXwqNLJAc0nsuU8Buggwqn_oBIMPLUZ8Ok6P61X3_-kgVqmakGeIK2aOwhzefA8BD4a2E8jzbhQgf2KA"
+                }
+
+            ]
+        },
+
+
+        "articles": [
+            {
+                "id": "0",
+                "name": "Top Stories",
+                "liveItems": [
+                    {
+                        "id": "25",
+                        "channelid": "2dbf326d5b8c05355f28bd7a3847cd62",
+                        "viewers": "1.8k",
+                        "name": "SneakerHead",
+                        "headline": "Tune in for a first look at the new Air Force!",
+                        "coverImage": "https://www.sneakerfiles.com/wp-content/uploads/2019/09/clot-fragment-nike-air-force-1-release-date.png",
+                        "videourl": "https://voddesk.s3-us-west-2.amazonaws.com/upstra-sample/v-land.mp4",
+                        "videourlDetail": "https://voddesk.s3-us-west-2.amazonaws.com/upstra-sample/v-port.mp4"
+                    },
+                    {
+                        "id": "26",
+                        "channelid": "2dbf326d5b8c05355f28bd7a3847cd62",
+                        "viewers": "2.4k",
+                        "name": "SneakerHead",
+                        "headline": "Addidas Reveals New Design",
+                        "coverImage": "https://images.indianexpress.com/2020/09/adidas.jpg",
+                        "videourl": "https://voddesk.s3-us-west-2.amazonaws.com/upstra-sample/v-land.mp4",
+                        "videourlDetail": "https://voddesk.s3-us-west-2.amazonaws.com/upstra-sample/v-port.mp4"
+                    }
+                ],
+                "topItems": [
+                    {
+                        "id": "27",
+                        "channelid": "2dbf326d5b8c05355f28bd7a3847cd62",
+                        "make": "NIKE",
+                        "brand": "LEGO",
+                        "headline": "What a Lego x Nike SB collab looks like",
+                        "isSaved": false,
+                        "discussions": "7",
+                        "description": "BespokeIND is gearing up to release a new custom creation, presenting the colorful Nike SB Dunk Low LEGO, which plays on the childhood obsession with LEGOs.",
+                        "detailBoxColor": "#EC332B",
+                        "coverImage": "https://lh5.googleusercontent.com/rTVGaHE5sKqlFYnIfhBQOccgzKITqPFlqKnYlvSpZbnk58a4pAD78FQYeWavZjdnLZ02nr6klcuioGxGJpkfFJIdgYKXEWtPA-giaNhhSaeoe-7gLthv_HGLXOXVhMdWSBKAgy5jfA",
+                       
+                    },
+
+                    {
+                        "id": "29",
+                        "channelid": "a9843a3f824532e27bf6725c272aa60b",
+                        "make": "FASHION",
+                        "brand": "NEWS",
+                        "headline": "How lockdown unleashed a thriving online market for colorfoul clothes",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Multicoloured striped tank tops, pink scalloped dungarees, rainbow wrist warmers… If bright and bold colour is what you’re looking for, Marielle Wyse is your woman and Wyse London your brand.",
+                        "detailBoxColor": "#395480",
+                        "coverImage": "https://lh4.googleusercontent.com/PYTdhSEPd_z3x7jcBLOc0ht2BPGMaXZ-L-xVSJJzb3Mq8VY98DoYwqYlOPiDnkArNr09mi3MvG3g_Zv2kX71XrvMlN4e6tTjTrgEOBC9xJlp2VR4hAdVnzlBWe_VlS6Zv2O-KaMGaw",
+                    },
+
+                    {
+                        "id": "30",
+                        "channelid": "b6f41d7eb14377266b11b9fac7d1ee2c",
+                        "make": "HERMES",
+                        "brand": "NEWS",
+                        "headline": "Hermès store opens in Harbour City, Hong Kong",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Hermès has unveiled its new store at the Harbour City shopping centre, double the size of its previous boutique there.",
+                        "detailBoxColor": "#604F38",
+                        "coverImage": "https://lh6.googleusercontent.com/gebgmzOO45NcqT9ZOOTVxLCyPvOkQ5Ut8LjrZIn5cSNZxR7MkphjES4Fte5oHGCJvzqeJ5Cb-jovPTBjQHHxE3NIYz5qY63kvQBH0jUAGF4sUZvbQk7V9H1eExRZ7rZrwHRVSCMiRQ",
+                    }
+                ],
+                "otherItems": [{
+                        "id": "28",
+                        "channelid": "e48a4d95c1bdd941b03fcdb862573f8d",
+                        "make": "TAYLOR SWIFT",
+                        "brand": "OUTFITS",
+                        "headline": "Great outfits in fashion history: Taylor Swift in a pearl-encrusted romper",
+                        "isSaved": false,
+                        "discussions": "5",
+                        "description": "There are perfectly good celebrity style moments, and then there are the looks that really stick with you, the ones you try desperately to recreate at home. In 'Great Outfits in Fashion History,' Fashionista editors are revisiting their all-time favorite looks.",
+                        "detailBoxColor": "#E9C99A4",
+                        "coverImage": "https://lh4.googleusercontent.com/VO088bTjWQNX6oQLZ0ErHHrJjs1-dPaFMo2fLqk4Fq-gx5Xqy1F3x2W4ytAkgsAz5djvbnP83sa-RL6T5RIPQbuH90x8k9uM06ni4NnjaY9kby0rJkrXJJPdL3dl4_IcUy9H5kwNDQ",
+                    },
+                    {
+                        "id": "31",
+                        "channelid": "65e65888c30aa30951d501aabbc88ed8",
+                        "make": "STORY",
+                        "brand": "FASHION",
+                        "headline": "Meet the Green Lady of Brooklyn and her evergreen approach to life",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "For the past 20 years or so, Elizabeth Sweetheart, 74, has dressed head to toe in a bright lime green, with hair dyed to match.",
+                        "detailBoxColor": "#68931D",
+                        "coverImage": "https://lh5.googleusercontent.com/THlZzmkRgbQYqFRfq7U28sxVgq8OUvUlxiSs95U4Wa5fLrEnodzWbMfO3Kh-j3zLaXRpJ_3ZwhriiGxu9nBXEBFyTrsecOzBg_alxplMDjzbIHaOJ7XOKuIdI9RB-XDgX5WpbAlzEg",
+                        
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "name": "Gucci",
+                "liveItems": [],
+                "topItems": [{
+                        "id": "32",
+                        "channelid": "04ef507f50fe1c341915901281d75f9c",
+                        "make": "GUCCI",
+                        "brand": "NEWS",
+                        "headline": "Gucci is selling upside-down glasses for £470 and people are confused",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Gucci is known for setting trends – but we’re not sure this is one that will catch on.",
+                        "detailBoxColor": "#625A49",
+                        "coverImage": "https://lh3.googleusercontent.com/R5MdlHcpFxGG2CGVWll5mstIcyZbTWqcsVWkofFGr_lrQlt4TKSXCEWCzoGXwqNLJAc0nsuU8Buggwqn_oBIMPLUZ8Ok6P61X3_-kgVqmakGeIK2aOwhzefA8BD4a2E8jzbhQgf2KA",
+                  
+                    },
+                    {
+                        "id": "33",
+                        "channelid": "2b45be85c7580b0abf5ea5c27968e798",
+                        "make": "GUCCI",
+                        "brand": "DISCOUNT",
+                        "headline": "Gucci footwear discounted up to 20 percent off for DSW sale",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Whether you’re looking for some personal wardrobe staples or shopping for a great gift for your favorite fashion lover, you’re sure to find something perfect.",
+                        "detailBoxColor": "#F6DDC7",
+                        "coverImage": "https://lh4.googleusercontent.com/_U9bPTpoYODizS8no6uKf8yNmB91qcIQR_LFBB82XoAmPdwhE5aDznr8yVJj_-RqBOr334AiIg2sPv9HORe1RjnQF82omyZzsSd0lhmXVD8pn2_ll6lvibnlNIJNn5FVI1gGlZtfYg",
+                       
+                    },
+                    {
+                        "id": "34",
+                        "channelid": "d4405729da029593d23ca48d5898640c",
+                        "make": "GUCCI",
+                        "brand": "NEWS",
+                        "headline": "Gucci's $1,100 USD Apple AirPods Pro Case Doubles as a Trunk Necklace",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "The Italian imprint also released a $460 USD GG Marmont AirPods pouch.",
+                        "detailBoxColor": "#D1B4A9",
+                        "coverImage": "https://lh3.googleusercontent.com/PxVUYUbhJ6PhFxm4WhrlhX1JcxHBc5V2MCLOHS1mju96p9cm3g0xysOO_flM9DIqfmlv5FDL5AuM0Ud2Xcgh5JN6tMmqq_AkyT5uBjqZscwG55E4Q8VjLkB0ZIRBpXoOm5ZIXUHERQ",
+                    }
+                ],
+                "otherItems": [{
+                        "id": "35",
+                        "channelid": "c12f0c4a409e14a6b29149dae58f5cc8",
+                        "make": "GUCCI",
+                        "brand": "NEWS",
+                        "headline": "Gucci releases non-binary gift guide featuring new MX collection",
+                        "isSaved": false,
+                        "discussions": "6",
+                        "description": "In a welcome shift towards more gender-inclusive representation in the fashion industry, and a historic first for the designer brand, Gucci has introduced a “for them” section to their annual gift guide which draws from their entirely non-binary collection of clothing and apparel.",
+                        "coverImage": "https://lh5.googleusercontent.com/fX-uSjuk0Mwfsso84dOa7TnA6xB56iQEFJs_SX8V6mGEuSB6KmHEe0V7fEF1rcvRQMbFD244ochTm4ZGzVrhYNrOQu6rF31XwXUEzdPdZL4HikvFuxvyRycVuqtb32hxhxRnDdBK_Q",
+                        
+                    },
+                    {
+                        "id": "35",
+                        "channelid": "af9fef8db5d477b057c91a50a64eb61e",
+                        "make": "GUCCI",
+                        "brand": "COLLECTION",
+                        "headline": "Gucci releases details on the 2021 Ready-To-Wear Spring Collection ",
+                        "isSaved": false,
+                        "discussions": "6",
+                        "description": "Here's a sneak peek of the upcoming Spring 2021 Ready-To-Wear collection from Gucci.",
+                        "coverImage": "https://lh5.googleusercontent.com/SQtbLEyg85vT1tHdZLcmgDb-L4QEmrgQnyswYoSqqfqPYb7WmcciCBDkvgm5cMOwjvRAHU4eRUvw1EBexuLVfgqo8VZhbkSHjNUuz3h0j64H1aYwMsQh8tiRShavOsVJSCmdXJnGlQ",
+                        
+                    }
+                ]
+
+            },
+            {
+                "id": "2",
+                "name": "Zara",
+                "liveItems": [],
+                "topItems": [{
+                        "id": "36",
+                        "channelid": "62b53d09846d14ee47a3593872950cf6",
+                        "make": "ZARA",
+                        "brand": "CHRISTMAS",
+                        "headline": "Zara's New Collection Is Full Of The Christmas Spirit 2020 Needs",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Coming to a onscreen party/outdoor restaurant near you.",
+                        "detailBoxColor": "#D9D1CE",
+                        "coverImage": "https://lh6.googleusercontent.com/wdOAlw1wJgMrp_O0GIJqdqn3C5THohYO0jSfAmVLghaGmjZcSlMgYjNnYqlYxXah1PZhxq6kXJz9fvFQ6GQcHAdOt9lHYzbmTlDOtbLZewzjaBD-5T0H22eSxKz8jo7Mhp04rXTxPg",
+                    },
+                    {
+                        "id": "37",
+                        "channelid": "39676bf83362d2ec53020b347c787da6",
+                        "make": "ZARA",
+                        "brand": "COLLABORATION",
+                        "headline": "Jo Loves And Zara Have Teamed Up For An Affordable Fragrance Line",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "For those with champagne taste on a beer budget.",
+                        "detailBoxColor": "#DEDCC5",
+                        "coverImage": "https://lh3.googleusercontent.com/ox0JKpE02yLTKr1CR98pzAVJK1oafy2AlVwKNzXhRQT_9xCAosNs9BZSoyh-DiYgp_V2O69e7kM7M-6b1rr10QdCSOiB1n4pkTfEe8cY7IJmGR-TAYrC5CS64PDZE56t6m_co9NgUQ",
+                    
+                    },
+                    {
+                        "id": "38",
+                        "channelid": "bc9e4cbd86de9c8c45eba020884f4a5b",
+                        "make": "ZARA",
+                        "brand": "COLLABORATION",
+                        "headline": "Zara to shutter Grand Rue Store, Luxembourg",
+                        "isSaved": false,
+                        "discussions": "4",
+                        "description": "Following a dispute over the cost of rent in the Grand Rue, Spanish ready-to-wear brand Zara will focus its retail strategy in Luxembourg on its three shopping mall outlets.",
+                        "detailBoxColor": "#5E6064",
+                        "coverImage": "https://lh6.googleusercontent.com/3wykmLfm_hkcKgCx9ND9aPICrMWJHrBF6rjhRaTymgzwj8iDHHEQA0r4dux7mhTcDyvsQSDnAxthrsv4Zhm8E-7DUBtKKWXKPQZ0Iy0HJ5tU9wczKBa_P6R2Ii1Wmj9hmbH5agcrxQ",
+                       
+                    }
+                ],
+                "otherItems": [{
+                    "id": "39",
+                    "channelid": "3bee35040998de7878efd4acc8ecca9c",
+                    "make": "ZARA",
+                    "brand": "COLLECTION",
+                    "headline": "Zara’s New Collection Is Made Of Vintage Pieces, Designed By 4 Rising Designers",
+                    "isSaved": false,
+                    "discussions": "4",
+                    "description": "On Thursday, Spanish fashion brand Zara announced a partnership with the Council of Fashion Designers in America (CFDA).",
+                    "coverImage": "https://lh5.googleusercontent.com/IEp51oYg27Z6q07-LihoAGAGoO_TjjjEtaf9pd3-ozx7JFaIUG0kUHm86TWom3fgGlzi-7bhv2AZ7-q5FQZqCJpxDY1EH4EYEbSMf375ferewkLis7t5Atf34MLiWRQ_L0XRLCFMBQ",
+                   
+                }]
+
+            }
+        ],
+
+        "shops": [{
+                "id": "0",
+                "name": "New In",
+                "items": [{
+                        "id": "0",
+                        "category": "NEW",
+                        "name": "Gavroche Cap",
+                        "price": "25",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.4k",
+                        "description": "An iconic cap, named after the character Gavroche from Les Misérables by Victor Hugo. Fall for this avant garde style wool cap, with its unique style and vintage touch.",
+                        "coverImage": "https://lh6.googleusercontent.com/CtrS5aQ5gz63r7Odxk66spVbiITsLY4UpZR4UmeVsrEMzyn4cKuZZM_evSO9__HP6-9O2AfBW77W1tZwg4XR3LeYdRcHXOgS3LuvPrDUfA1Svrzj-VC1adYlwD_xWrWJjZiLsoO3VA",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/WrQcE3jeuGY_wQh4qyfmUN-_X808ZiNroBMSmsbtrOr6KpMDKmTE9-kPqEkrBgqhQescOycOL-LHEvkrp9XzcwBQsGiFLvXzs2D5dsAcY1kAC90Rpik8qBaL4chLJrWOExX2-8dkyg",
+                            "https://lh4.googleusercontent.com/tqrZegyPik5sJVz4wS_exvtVIdFHzRHh90ijP4wNxTBI-HrQaGeeBXHf832KWH2fONPtfeUs-Vc25I_nLwZCzcXl1D9x2g9Q2JHXYrTUpP4OGilBF25LC7rjsEwHnBaMsoOQFNiaJw"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "1",
+                        "category": "NEW",
+                        "name": "Grey Suit",
+                        "price": "160",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "The Grey Suit is simultaneously classic and modern, effortless and refined. Includes jacket and pants. Made from 100% Italian merino wool.",
+                        "coverImage": "https://lh4.googleusercontent.com/3nAyZOIu1JxEIzYYtAWT0m6AN5fZ0cIdy0eiLP0HqD7fBTGnYF35TeS9gGB90HsJ_-U_hYRafmY-2rYNUGX-lCJyYMgnMUObf-OpmavX31ORN2F_B2l2LvwCEmRf2Wxs0iov0h22OQ",
+                        "detailImages": [
+                            "https://lh4.googleusercontent.com/3nAyZOIu1JxEIzYYtAWT0m6AN5fZ0cIdy0eiLP0HqD7fBTGnYF35TeS9gGB90HsJ_-U_hYRafmY-2rYNUGX-lCJyYMgnMUObf-OpmavX31ORN2F_B2l2LvwCEmRf2Wxs0iov0h22OQ"
+                        ],
+                        "availableColors": [
+                            "#c0c0c0"
+                        ]
+                    }, {
+                        "id": "40",
+                        "category": "NEW",
+                        "name": "Woodstock Backpack - Brevitée",
+                        "price": "110",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.4k",
+                        "description": "Swap your middle-school carryall for one of these stylish, functional packs. These are the best men's backpacks for hiking and more.",
+                        "coverImage": "https://lh3.googleusercontent.com/yqY5Skq3Kyj26jqVQD5Gtjhon8iHBw2-_NBMNheTcfzreviYcQwDRiC2JqtF4WQG8unQUH_uY94-xsNRd1xrJ50PI1VABwP3eQ_nrD5aB7tOIZS6FdK99ezLrowwQEN_znlkJk24Iw",
+                        "detailImages": [
+                            "https://lh3.googleusercontent.com/yqY5Skq3Kyj26jqVQD5Gtjhon8iHBw2-_NBMNheTcfzreviYcQwDRiC2JqtF4WQG8unQUH_uY94-xsNRd1xrJ50PI1VABwP3eQ_nrD5aB7tOIZS6FdK99ezLrowwQEN_znlkJk24Iw",
+                            "https://lh6.googleusercontent.com/CM14U9sRIuUPmIGCoEBzkAXv7LKIRsQMSQz56i35VwpTrSaHmSgq82Jyu9DVbemDAHcYV19wY8QJdpwVqQD5vaAp6y2bbbpPlS2R9f9ieA_oFCFxZjhIqFO02ATDeP1p3CNjTJQ2sw"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "41",
+                        "category": "NEW",
+                        "name": "Timeless Striped Shirt",
+                        "price": "25",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "The Grey Suit is simultaneously classic and modern, effortless and refined. Includes jacket and pants. Made from 100% Italian merino wool.",
+                        "coverImage": "https://lh6.googleusercontent.com/sFCpP4O7MNZL3fhvX7PvVPrLiJJfZtVUeR-Nw3HxcUwZZa6ItQtjcDhFCfUvhr9b9AwI_3I8G51kPk8T18YQCMo1GhvBO85am0LFpPl_aTk79F_InsfVXeO-CEwDtOvkj2Wld3G2Qg",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/sFCpP4O7MNZL3fhvX7PvVPrLiJJfZtVUeR-Nw3HxcUwZZa6ItQtjcDhFCfUvhr9b9AwI_3I8G51kPk8T18YQCMo1GhvBO85am0LFpPl_aTk79F_InsfVXeO-CEwDtOvkj2Wld3G2Qg",
+                            "https://lh3.googleusercontent.com/uR8tO0PTbkCloLv8T6ua6lKZJfWU41Ai5r6Vhh1YaZxQNFVZM9bsWSc0To6-5RY2Wms4Gv2SFobgkF4l9jnvSFXXcGy84df3ORrEct8zTqnq5Sra69VQ76pagK61RMsi28rYMu7jKw",
+                            "https://lh5.googleusercontent.com/haVnWvwbWsRXBrsTiMnc9PpfRWxOZs8pQYiUq8MrmYXgQFN-ZAY0fxmgIZkSdM_bxCm2FcEAelux11AOjaeGESFDTyojBrULg-CxcFscO_vQijrmnXNeLc4YDMR3BLvui8ENfAMHeA"
+                        ],
+                        "availableColors": [
+                            "#f6546a",
+                            "#ffff00"
+                        ]
+                    },
+                    {
+                        "id": "42",
+                        "category": "NEW",
+                        "name": "Mom's Jeans",
+                        "price": "43",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "Nothing can go wrong with a classic pair of Mom's jeans. Made with recycled materials, those jeans are the perfect fit for any activity, and are long-lasting. No more damaged jean, you can use those all day everyday!",
+                        "coverImage": "https://lh3.googleusercontent.com/-DSpGgZMwmxsh2pmaRICTmJty1Yj7Kvhx-Rtceo65mRemjvE0fRoZFdQ5qUF4Wx9Csxfi9GFSCYtrtigy1567Ok2yAgWwLPlvV6QZKBnIqeoggX1sLZR_dr-jsUmr9z1YoSoXf1-ZQ",
+                        "detailImages": [
+                            "https://lh3.googleusercontent.com/-DSpGgZMwmxsh2pmaRICTmJty1Yj7Kvhx-Rtceo65mRemjvE0fRoZFdQ5qUF4Wx9Csxfi9GFSCYtrtigy1567Ok2yAgWwLPlvV6QZKBnIqeoggX1sLZR_dr-jsUmr9z1YoSoXf1-ZQ",
+                            "https://lh5.googleusercontent.com/JLVgJsv7n6GeOTTvRSNSWXN1LisLUovGWEKKTFqLW5gfOk75hqibJoctRs4rcx3u2NEwah6o7FoyhmG6204Gxf0t20kKdmzxeVT5m1XRrd8fMklq0Gs-_ou60tWu5_ptIBghOziA5g"
+                        ],
+                        "availableColors": [
+                            "#003366",
+                            "#4ca3dd"
+                        ]
+                    },
+                    {
+                        "id": "43",
+                        "category": "NEW",
+                        "name": "McRun Sneakers",
+                        "price": "140",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "Colorful and powerful, those futuristic sneakers were designed to carry you over on your greatest journeys.",
+                        "coverImage": "https://lh6.googleusercontent.com/Omz1_GDeOP2W-i0qvYnd_oeH_gjuE-7vPpW9o5jt4d4zQMYdHaPGm9Ym-N4pbsI6z6Yy6ruBk3qMyfYG7WyCx7aBBM4g8Cb_m3Ug89v_X8Z8NuCLH5SXuiyD7aV13WbOifBq5PraUA",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/Omz1_GDeOP2W-i0qvYnd_oeH_gjuE-7vPpW9o5jt4d4zQMYdHaPGm9Ym-N4pbsI6z6Yy6ruBk3qMyfYG7WyCx7aBBM4g8Cb_m3Ug89v_X8Z8NuCLH5SXuiyD7aV13WbOifBq5PraUA",
+                            "https://lh5.googleusercontent.com/hWoZNImANX71JBifsgIOQamuva1K7Pdd8hEy9O-zWW4xGe1YXSi-fQ7d8BW41Cmv3OCDfi6VvlMYd-wZK8X9mpxgBUA4AfOXfdjwJA_8iuKJFsrRFIrpluqGcF3-IUeWOzUEml-xow"
+                        ],
+                        "availableColors": [
+                            "#ffd700",
+                            "#ffffff"
+                        ]
+                    },
+                    {
+                        "id": "44",
+                        "category": "NEW",
+                        "name": "Culprit T-Shirt ",
+                        "price": "20",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/44mfoRS24Y4eq656D6ZZYiYi7u02YyKqaDMmQAxzF5ktEgoBx1s3_VHRCvllw5pjl5PXqjT7m0VOAkreeNZiv2ei4FfO2VgOh-s3f8mu8YHYyiq2s-ip4Jl079BQI0V-IfYVSyQCCQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "45",
+                        "category": "NEW",
+                        "name": "Ultimate Packing Backpack",
+                        "price": "150",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "930",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/jFSiZuAV1MYlvlXxaH7CmlW6pS3p4E0RXw7WJYkLQxR80h26kCWURpcMr0LvrSm1wEmue8DvtbfD9-8XFFusFOEZVnP7kAq8TkkPrvIgLeQmDMsMq4tcp09oo53I_KdLPr--XOn0NA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "46",
+                        "category": "NEW",
+                        "name": "Euréka T-Shirt",
+                        "price": "20",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "90",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/s1Kt2XGh-pMkxkvW6OFjbVSdai6YbH1bTLh8Yw6w54CRfd6UGX2fk1M35lTmOI-H7IHaPAqrB8_6_jbN_RbCaL7K95ByO8pIwBf6JGJfyNdAIGwdWgdzT4xzmNSBs7v7r8uOdmYmGg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "47",
+                        "category": "NEW",
+                        "name": "Vichy Dress",
+                        "price": "65",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "90",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/jMSxHBl-XnY_7Q4DiexDrxWjBKumQPU4oqKWs3DnkcZ-MOWuvAxwVQB-KPrn-xPHWGm0XtSzTl2lqW3you_CGhpLUftuFmrjtcPkvU-Z6LEMUA6SB5-iHmGWHWgFyd1inqrns42vNg",
+                        "detailImages": [],
+                        "availableColors": []
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "name": "Best Seller",
+                "items": [{
+                        "id": "2",
+                        "category": "NEW",
+                        "name": "Crown T-Shirt",
+                        "price": "20",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "1.2k",
+                        "description": "Feel like a true King with this minimalist t-shirt, made with recycled materials.",
+                        "coverImage": "https://lh6.googleusercontent.com/qWvwtDXskq5e9n36KbpnNngrWH1I-cM6vukn723WyfmHNUZaBj1MNZ7L2gn5puB74CieF9VtAsq8wp5yh7tIBPKxvYLzEzuFl3umYMS-pCcXsP3YFcScSmSdqa7nidlnPAEXZh23KA",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/qWvwtDXskq5e9n36KbpnNngrWH1I-cM6vukn723WyfmHNUZaBj1MNZ7L2gn5puB74CieF9VtAsq8wp5yh7tIBPKxvYLzEzuFl3umYMS-pCcXsP3YFcScSmSdqa7nidlnPAEXZh23KA"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "category": "PRE-ORDER",
+                        "name": "Thought Catalog - White T Shirt",
+                        "price": "18",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "9.3k",
+                        "description": "This simple and minimalist shirt has perfect buttery soft feel and is made from 100% organic cotton, giving it a heavy but lush feel.",
+                        "coverImage": "https://lh6.googleusercontent.com/a17Ih8ynhNblynT8lqlEGpzbsSbZfYG70V8f7G5fsuOfMB6Fw7s_GD_Z_R7itI2gMAEX2axXcuqUTJxFDU4WC-IE82mrturx-4VljvX7Y9PAaxBkXdg_cSAKfiD5d0ObC0odmmmnbw",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/a17Ih8ynhNblynT8lqlEGpzbsSbZfYG70V8f7G5fsuOfMB6Fw7s_GD_Z_R7itI2gMAEX2axXcuqUTJxFDU4WC-IE82mrturx-4VljvX7Y9PAaxBkXdg_cSAKfiD5d0ObC0odmmmnbw",
+                            "https://lh6.googleusercontent.com/swHbJgp2VkrejFAiEblhJI2UdRR5KhE_BygK-PsXpE4-laaLhIVk39VT6RBK7QA5q8cLDAiLQ3Gi1PXAeNKZjAlywJ7uXKdNdAmtlFB1S04o0DkneYdqPPe6-CuJpD0FUbRxt3kOdQ"
+                        ],
+                        "availableColors": [
+                            "#666666"
+                        ]
+                    },
+                    {
+                        "id": "4",
+                        "category": "CLASSIC",
+                        "name": "Yoga Comfort Legging",
+                        "price": "38",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "4.2k",
+                        "description": "This legging was created with high-quality materials, to ensure comfort and resistance during your yoga practices.",
+                        "coverImage": "https://lh6.googleusercontent.com/vwqnF4-SkQnig4UlGmJIsu4rVd4zhJjC7rc9M49LcLOnXBqt7rjh0HEzIVIZIENXa49c4N_36GXtEtJmr-_UL97P6_GZE2bi7KdPOHdQO1i9Kvy5CfiW30XSHXIIqzkg725XxyL5rQ",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/vwqnF4-SkQnig4UlGmJIsu4rVd4zhJjC7rc9M49LcLOnXBqt7rjh0HEzIVIZIENXa49c4N_36GXtEtJmr-_UL97P6_GZE2bi7KdPOHdQO1i9Kvy5CfiW30XSHXIIqzkg725XxyL5rQ",
+                            "https://lh6.googleusercontent.com/0JIAG7DxNsyf-fJw3Lu7TFOvUtkINrkIZsF5OaMMYsx-e9jbulcRyR5bmQKC9YwdOPj7LL937Cee_-zfWQUmcK1mkS8CoChnoJ-Y7nc1dqTyyEVm7BaaiPvOTkoAnaY9Gzhvyq5SCw"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "48",
+                        "category": "CLASSIC",
+                        "name": "Peace Skeleton T-Shirt",
+                        "price": "17",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "4.2k",
+                        "description": "Meant for cool kids, this T-shirt is a reminder to stay true to yourself, and wild.",
+                        "coverImage": "https://lh4.googleusercontent.com/xZ6L77GXSYQxNVaoBQppjxkwCh-2iPCNqCyzrU2Ilegt1pZ7A9kK_Xuhb3FaVlv_Ui77kF6I2FKv9qOIPUFErqlnPkiSvR-l_YP8YjMXYsB8XeoeB8gz7FR4QpWIuOUv1gZ4lhaZ5A",
+                        "detailImages": [
+                            "https://lh4.googleusercontent.com/xZ6L77GXSYQxNVaoBQppjxkwCh-2iPCNqCyzrU2Ilegt1pZ7A9kK_Xuhb3FaVlv_Ui77kF6I2FKv9qOIPUFErqlnPkiSvR-l_YP8YjMXYsB8XeoeB8gz7FR4QpWIuOUv1gZ4lhaZ5A",
+                            "https://lh6.googleusercontent.com/jFxrKjHnIaAxLdcZc08-Aac5yTZt_rLEKqI4zJFnyESWcv47gcmB7DsrTzQVuMp2gvKBQDFotFtMjDrIc3LsDyl4tq-smQGadFOzyfJN5fEHUZI8Y50aLNcy3VRDXp8ZOHpX-y8jNw",
+                            "https://lh3.googleusercontent.com/Mgv_zmmzePJB8BuzJkZ_9OgO4K1y-7lKgnExbruqaBO9LDOcKBhOBiTH_HS5eVq7ccTskQurcqfap8Db6kWHjp2GEGwB2Q8vBYHGSxgyzHFhv1DL-UKl1e2rcOgF-7NK02EmOKpl_w"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "49",
+                        "category": "CLASSIC",
+                        "name": "Conversee - High rise",
+                        "price": "90",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "4.2k",
+                        "description": "The classic Conversee has seduced generations, with its unique look and various colors.",
+                        "coverImage": "yimDPmv477qkh89p0Z8ucaG0jhtZ0zcvftFMeZx3GTitEAS1bfF0swxFcstVlYqGv4e77bjagm2uf7Y8OPBGqN348NKC6mrz4i2cSzQQI_UqzPzB4VQrkeeM429S8CHN7Yf4zISewQ",
+                        "detailImages": [
+                            "yimDPmv477qkh89p0Z8ucaG0jhtZ0zcvftFMeZx3GTitEAS1bfF0swxFcstVlYqGv4e77bjagm2uf7Y8OPBGqN348NKC6mrz4i2cSzQQI_UqzPzB4VQrkeeM429S8CHN7Yf4zISewQ",
+                            "https://lh6.googleusercontent.com/kNAhpSW4JnrfnS2TEmihpvKD6KutQg6jFu7A_n3NYlLuBuu8XcvE5eotHMhzS9Y18DRPQXn9DzYT1kb68jRrtvsH6Gn13dxSht_DuVcwfW4LAQqir2COxqrBGiyfMvzejNydbucA4Q",
+                            "https://lh3.googleusercontent.com/77B5OLagMEY7yVWIWKoDNkHERTenwzN1oEZLkEXxlHT6GuUbnkvDynCRD_7CoXX0M1XevtCMsYyYBiLl552_wZPYP11uw7wuCuJvwldpTsgy5gry9d7u0vJK8sOHBhuFQylSVmduKQ",
+                            "https://lh3.googleusercontent.com/a30_gBx-X7t2NgliAShtKRga1p2EZzpB1ltmd5w3HiaPLTrxPk9WXtYYHLGG-nFhuZtgyUUAaXuHeOy6lBGq3J7uWTaVejM96a7S9jfu6sEbFYdO2JDkDtQ0fUsFT45fKbQ2vuoOPA"
+                        ],
+                        "availableColors": [
+                            "#000000",
+                            "#003366",
+                            "#ffffff",
+                            "#ffd700"
+                        ]
+                    },
+                    {
+                        "id": "50",
+                        "category": "CLASSIC",
+                        "name": "MountainSide Cap",
+                        "price": "30",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "4.2k",
+                        "description": "Nature lovers, this cap is for you. Designed by a team of outdoor adventurer, this cap gathers natural elements to fit your journeys into our wild world. Made with organic materials only.",
+                        "coverImage": "https://lh6.googleusercontent.com/j5JvGjrI1iHkenSZAc7SHYvjQRPPJL5Sxqf9aBJcmC0wip8uBqx34hHcA_HlgmkOzR13ZCLRKOc7MtCxlgUzpjbXAl5qJ_NYzkvSXSQaz-eDduVJHA4jTOBFddEXoVnx5vuNYhLjcQ",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/j5JvGjrI1iHkenSZAc7SHYvjQRPPJL5Sxqf9aBJcmC0wip8uBqx34hHcA_HlgmkOzR13ZCLRKOc7MtCxlgUzpjbXAl5qJ_NYzkvSXSQaz-eDduVJHA4jTOBFddEXoVnx5vuNYhLjcQ",
+                            "https://lh4.googleusercontent.com/J_gX3UEPydMA99anoiSmFbpJ-Kle5Y7TBbq5y_JVyeZQCTUBx82I_Kk44OrmYl4z3IRtoKJ1lnZ915N8yVi5RbXdK5nTrXChPo6rsc_IG_puG5fcuZTbdfgk_i_eXH9vIawWBRAMyg"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "51",
+                        "category": "CLASSIC",
+                        "name": "Jordans Old School",
+                        "price": "120",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2k",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/Wq1urTzcVaBv30gLlWK3iqPtUKuylwfiKG1IXISh6kYKOCNsjtG-9dR_R3imT07i-sD8hjZUlwu0RRhs3ivI6i9FmdqJ8VLVRvhEQFO7xhh49Js6I1ywquwWeDcFig_sEDZO3MGqpA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "52",
+                        "category": "PRE-ORDER",
+                        "name": "Polka Mini Dress",
+                        "price": "50",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "100",
+                        "description": "",
+                        "coverImage": "https://lh4.googleusercontent.com/9TysYSnZHxga8Bxws3xX1Xwz83q_WNSaUWDdE-8NHCYkb4-EDlvOATf1sg4kMbcdWGXCf-2Nhz3WNF24d2uTUSF78u3lG6Y8Y4svWzqVXNTCJ9mXU6ehj00feskzVU4bjGu3osmjdw",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "53",
+                        "category": "CLASSIC",
+                        "name": "Urban Sport Set",
+                        "price": "110",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "130",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/CZbLdw_PQ2WCi6kqV-X8QNjK89p1_vDZJJe9QgnP9V6Ki8UCKVa0XbsXc8GgkPeX-NZPa6XkyPmcX4MoBdNdy7PCjl4e_F_RchmwiLei8GUvGGTsmg30nyavU-nNQ8Yy8lA86abjFg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "54",
+                        "category": "CLASSIC",
+                        "name": "Winter Beanie",
+                        "price": "18",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "130",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/K2_EvttKz8GfRoMxIF4rjC29UiajybAC36uWDvOh-grGruaydGSJ3InFhRRSwLXN1f3efZUxJBzK8m85phT6qqBwZpCnYR4VEPb9WNmFZfE7iLCMuZJ8f3FWJlD1nausdD0m5qB5Dg",
+                        "detailImages": [],
+                        "availableColors": []
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Sales",
+                "items": [{
+                        "id": "5",
+                        "category": "SALES",
+                        "name": "Patchwork Dress",
+                        "price": "36",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "1.9k",
+                        "description": "Hand-made dress with vibrant patterns, this dress fits any occasions perfectly.",
+                        "coverImage": "https://lh6.googleusercontent.com/UnH5NQcufm9dhbcgiOCxWHXUUDlj_9LDaex1lYu_-fHQaBBUGZVsSLaqIrrDiPFkSLNe0S24ch5s7VnhRbqo1N0i8AFnBu8vVcLfmGiq867jEPWnrk2vy_49nfluYY34hZrNTEEFMA",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/UnH5NQcufm9dhbcgiOCxWHXUUDlj_9LDaex1lYu_-fHQaBBUGZVsSLaqIrrDiPFkSLNe0S24ch5s7VnhRbqo1N0i8AFnBu8vVcLfmGiq867jEPWnrk2vy_49nfluYY34hZrNTEEFMA"
+                        ],
+                        "availableColors": [
+                            "#800000"
+                        ]
+                    },
+                    {
+                        "id": "6",
+                        "category": "SALES",
+                        "name": "Osaka Japan T-Shirt",
+                        "price": "24",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "3.9k",
+                        "description": "This T-shirt features japanese elements, for your greatest pleasure.",
+                        "coverImage": "https://lh3.googleusercontent.com/bEjlBr86EuCTY5gF_NnSahLnuS6Dx-d09a2uO00TDrlpiZLddSIqb0zyYlEze3C84_tM90P5d1hh-g6gU-2RY8E4hlaptPxHzsANE_lq-QhD52CEAxn-JZ3aR-h7Kr0s4ptRSdL4zg",
+                        "detailImages": [
+                            "https://lh3.googleusercontent.com/bEjlBr86EuCTY5gF_NnSahLnuS6Dx-d09a2uO00TDrlpiZLddSIqb0zyYlEze3C84_tM90P5d1hh-g6gU-2RY8E4hlaptPxHzsANE_lq-QhD52CEAxn-JZ3aR-h7Kr0s4ptRSdL4zg",
+                            "https://lh3.googleusercontent.com/vpnk6omorhi_0JxFOYitFxJsSt6PMHK9EIbNpyxGNXPNFEbroTuWw00eIluT3xq1F9L0MtFjfQuN4tqvbL3uKPAUGjXGTvQqcphXTSYnR491gNLEOsCBEjNfn37-q-TKfW7CFqDlxQ"
+                        ],
+                        "availableColors": [
+                            "#ffffff",
+                            "#003366"
+                        ]
+                    },
+                    {
+                        "id": "7",
+                        "category": "SALES",
+                        "name": "In Style Hand Bag ",
+                        "price": "178",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.2k",
+                        "description": "Elegant, classy, and easy-to-carry, this luxurious bag was handmade by the very finest of Italian artisans.",
+                        "coverImage": "https://lh5.googleusercontent.com/6lLL2SRaOgtU3rrokRhUWZZwCCKPmykcLuWyYvnFb0ss6EegXJFlF0M0d-8ATtndKDr45o9Dr-fXfQAdgBEyT1SI_qxD1e0lO-HpG4fLV925uLhS7882BeP68ZDHMBgZx7ijvUKAcA",
+                        "detailImages": [
+                            "https://lh5.googleusercontent.com/6lLL2SRaOgtU3rrokRhUWZZwCCKPmykcLuWyYvnFb0ss6EegXJFlF0M0d-8ATtndKDr45o9Dr-fXfQAdgBEyT1SI_qxD1e0lO-HpG4fLV925uLhS7882BeP68ZDHMBgZx7ijvUKAcA",
+                            "https://lh5.googleusercontent.com/3MEROTelB7hctBIclG1tlnwWSsTe6h00wN4Qp6-K0R9Tb831KS0OlbXaCWhKgg0wiLk9xyMROTJfWHlsoEeOAO742MDtixILBrrm5H6qD7Tv8QB2nfjLXAqlukgT-S6Y6ksJG3UJRA"
+                        ],
+                        "availableColors": [
+                            "#ffffff",
+                            "#ffa500"
+                        ]
+                    },
+                    {
+                        "id": "54",
+                        "category": "SALES",
+                        "name": "Eleganza Green Suit",
+                        "price": "165",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.2k",
+                        "description": "Elegant, classy, and easy-to-carry, this luxurious bag was handmade by the very finest of Italian artisans.",
+                        "coverImage": "https://lh4.googleusercontent.com/ttiPc7-dPb8ZwrCr1zuLWmR-fC6CQaF1QmoMiiJSB7lf2iIOS1AtXQS8v6M7DTHBRuKTTYxYMFrlLYCxZgV9mnvfWZhMHJ1PW03NRFzKS8D6e_yDa-CTGTVoBGR8EGQPZR07NBTRUw",
+                        "detailImages": [
+                            "https://lh4.googleusercontent.com/ttiPc7-dPb8ZwrCr1zuLWmR-fC6CQaF1QmoMiiJSB7lf2iIOS1AtXQS8v6M7DTHBRuKTTYxYMFrlLYCxZgV9mnvfWZhMHJ1PW03NRFzKS8D6e_yDa-CTGTVoBGR8EGQPZR07NBTRUw",
+                            "https://lh6.googleusercontent.com/051cntDwIau3bwYKiYhyrdffudxIewWftLY14MR6_Gk3jHgPdtFORKHT-IGmJOjjRbx8OsAQcShBWdmYrC90F5IqLOutOzPvMaT8CbvY_iKjVMdpQBRUMkJ7iQTSpYvXgpTzZrxDOA"
+                        ],
+                        "availableColors": [
+                            "#065535"
+                        ]
+                    },
+                    {
+                        "id": "55",
+                        "category": "SALES",
+                        "name": "Floral Skirt",
+                        "price": "28",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.2k",
+                        "description": "Get ready to bloom with this beautiful floral skirt! ",
+                        "coverImage": "https://lh6.googleusercontent.com/ETcZpDdZGi_J2fybTsw7aQeOFxfGEXosA-zBQdLYm9b7zVuVUucm8Opn6oLjgRX4OWAv4i6AI608nmwOkmBu17cB6ktchg23AYAUWQhOOWnviBpTS4U7vMta3TBMIu5iV4ygX5YwIg",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/ETcZpDdZGi_J2fybTsw7aQeOFxfGEXosA-zBQdLYm9b7zVuVUucm8Opn6oLjgRX4OWAv4i6AI608nmwOkmBu17cB6ktchg23AYAUWQhOOWnviBpTS4U7vMta3TBMIu5iV4ygX5YwIg",
+                            "https://lh3.googleusercontent.com/9QzY0ugVPKyelVX4f3Lu2D6io3coeqzXdVPMxaad5jHwIN7yQUBMwNcGnVhTwJAZzYwlc3c23zK9tNR05T3R0JRkazvogEwPwAE0DbgYeKMjMugxkabIl7xeVITgRrlxxLtNbbGBVw"
+                        ],
+                        "availableColors": [
+                            "#000000"
+                        ]
+                    },
+                    {
+                        "id": "56",
+                        "category": "SALES",
+                        "name": "Wool jacket",
+                        "price": "89",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "2.2k",
+                        "description": "This wool jacket has your back covered, even during the coldest days.",
+                        "coverImage": "https://lh6.googleusercontent.com/Z5_NaZ8FwvLSFv_SD8cYOdIyytIyDAGNdChCPkdmYdTxwIPiLemXdW9K3W6cxsI8k9KEBjhMGGNg9Vx8VVvOD2A_ULNqggflg9w6XZN3_mwylhjL7qZPV-sQDpPEhCFDGNiePYPKcw",
+                        "detailImages": [
+                            "https://lh6.googleusercontent.com/Z5_NaZ8FwvLSFv_SD8cYOdIyytIyDAGNdChCPkdmYdTxwIPiLemXdW9K3W6cxsI8k9KEBjhMGGNg9Vx8VVvOD2A_ULNqggflg9w6XZN3_mwylhjL7qZPV-sQDpPEhCFDGNiePYPKcw",
+                            "https://lh3.googleusercontent.com/0fqElApaw1EDlXZuHe4RN14MJ_U75TDA17br3UkYT51vF7AaOi4XZEKMd5AHatoUJVPR1lmFbSqN_4jvc-TQfc20SMATNrHpozc3AozyshtNBKnomKzblkoLBWBBSNl-gVQgBylq_g"
+                        ],
+                        "availableColors": [
+                            "#daa520"
+                        ]
+                    },
+                    {
+                        "id": "57",
+                        "category": "SALES",
+                        "name": "Bardot Dress",
+                        "price": "76",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "130",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/Gv1Mn57LFkI28MEO4wwDh7m3_SL-QyfqG8aGPU0aHvAI0NnpgUh7K2j6XZMd9eyTpD7bbPWvO7jd9sUbJor8widlzyb7_VWdz88J26UH-0mdhNTbaNLGjBfk2sJkwSj_zeJH76UCkg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "58",
+                        "category": "SALES",
+                        "name": "We Are One T-Shirt",
+                        "price": "23",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "213",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/9ZMu2u-JtX7ktReW0tzFCSlG33vhAt8RZ2o6Iut7ya2VuBf2nywmwkldTgGPgQUOGEVTYsd5v5zy8wN_fXkzlCTiy2xSaa6A_WF1_a8tilXpronfVDXPEcvpTul4J1PSJ73ophIpJg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "59",
+                        "category": "SALES",
+                        "name": "Mini White Dress",
+                        "price": "16",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "qrD20hSGUzXiq7BD1qtYnU5BFYG0bu5iXlNU1UTtJ0If8KW4NRm5v7QZJo7zwzztAqNcFOkjblR8hfwC1gzlttB4RNfszW0shkGiEcYApS_XUD3L_EsE",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "60",
+                        "category": "SALES",
+                        "name": "Pink Derby Shoes",
+                        "price": "86",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/1ASSfb79Z4oh_XMt754ytUtUk0P6T4Oav6BcrriPwoeWh6plb8CKOMUMPlCNCeibqrHEeq6raPX34cVQUiqDa1Wbbz56GwjeGlNCJtYoLXnxdVD_dSyr7X_NbKgVpg2pHY1GeD8g_w",
+                        "detailImages": [],
+                        "availableColors": []
+                    }
+
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Valentina",
+                "items": [{
+                        "id": "61",
+                        "category": "VALENTINA",
+                        "name": "Patchwork Blue Suit",
+                        "price": "154",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/xH33yAwCsSq7nFOarETPJbQFDQwXgEk8Ol-ErEHx40PR9w4kcnAJHYuRiM265nsBTQpDJz2GiLbJWlDluLMvICnY4ln65ZJ9csRNVuoOHvbPEVEdaRr7crkA0xoVqOH2UuI95lUvCA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "62",
+                        "category": "VALENTINA",
+                        "name": "Gold Pink Sandals",
+                        "price": "34",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/JYzWINjEQ6llPRdAMPfxjA36qAteifmhFQP0qDdvsW62R1OyCCnY3IUblsSBAigvpymqg-F45fTlblMEk5WEMGliJHyuNMrC2xbHqNFK_cG-t6kLh96WKMRJFehfpuHtG9JNKffiwg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "63",
+                        "category": "VALENTINA",
+                        "name": "Blue Polka Shirt",
+                        "price": "27",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/gCq1vG4TDa3LwCukAgZfbsNNUVjPpskdAl6yaTZtiChwnJJ5n-1lvIItjU5us8Afw9cukSoEqUeWkTP0ZhUS8U1HloE5LA6ogPYpp60TTRE0hx5RXtHDpMfopsrf1cCuLTrXhXsBtQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "64",
+                        "category": "VALENTINA",
+                        "name": "Long Camel Coat",
+                        "price": "75",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/GM1TQgBb5tEpPLUsBIHp0JMdW4xX3f15MjaIkLMQ2o4RLPoZKVAc5CValx0U3wS7zibLKsjpymeEKMUSQAwc7Pd266x0L1etJvvi0Ni20O8E4MLqkAakoTLD9_2tDI8o1apadmac9w",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "65",
+                        "category": "VALENTINA",
+                        "name": "Siler Satchel Bag",
+                        "price": "89",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "Ka3Vdl9NE39_Gd4ZXoVw24C9lXLctzU0CwftpYMns4QoCYZ7qd28l3YiuDje4a8HsGqKFz6Ox5SrufQmVaz6mL12Va30JFyrK8OWDHJ0hglDkbkuhxCUWLLwXTUpFdJM21q1VcC84w",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "66",
+                        "category": "VALENTINA",
+                        "name": "Black Polished High Heels",
+                        "price": "89",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/iq0E3cT8VthzR9mwP4C9WaitqaPbL0WrNCLZuaHAISKWY0zFmv0LREjEUOE5DE_yey5kOPEZacXHmzpFrzNy9Tmp4O9AdGf5WsncH3lxihrguzGBQi_F7n5nRi-HnU1PhdU7qBnULA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "67",
+                        "category": "VALENTINA",
+                        "name": "Black Polished High Heels",
+                        "price": "89",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/iq0E3cT8VthzR9mwP4C9WaitqaPbL0WrNCLZuaHAISKWY0zFmv0LREjEUOE5DE_yey5kOPEZacXHmzpFrzNy9Tmp4O9AdGf5WsncH3lxihrguzGBQi_F7n5nRi-HnU1PhdU7qBnULA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "68",
+                        "category": "VALENTINA",
+                        "name": "Striped B&W Shirt",
+                        "price": "32",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/iqnRPrs3BLhkAo8hcIizcE2ubTTBT59M3AZedPBNRAAgnH8xhXE7KHcjXIHDi_2VnqjHP_Dq0BcQaf8Kb8skH3Nf4lBur62C97oUiXKZwUNylpyN-3mmnhf8EVRWYvpdriGTdQEnKQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "69",
+                        "category": "VALENTINA",
+                        "name": "Off The Shoulder Dress",
+                        "price": "38",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh5.googleusercontent.com/-HRX2ZXMOy758xsnUouW2lC4I5JBGoPGiIiNO85ueGUioNTiLmtHzTdECx0tvK7vU_fsdO4Lp4RfCWFWaoT0YfdcwJDezc51OJu-ORzLr-IGdOWBxXdbf__I8ZWFWEWX2SGDvqsW9A",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "70",
+                        "category": "VALENTINA",
+                        "name": "Brown Leather Shoes",
+                        "price": "67",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/e2hhQEwmKQ8iuIgm4mfdalCLDpdode0O-SHwzPm9c1SY7XRsQv_3CDfZZ-SCVdYhH7DwNaNMtxN8mI3Pmb5fnYzP-eLr2Q4Hwvd9GEG3LDVqUNDe7Fqh4GUk-c6S5j-J3pf7-9SasQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    }
+
+                ]
+            },
+            {
+                "id": "4",
+                "name": "Urban Clothing Line",
+                "items": [{
+                        "id": "71",
+                        "category": "URBAN",
+                        "name": "Too Close T-Shirt",
+                        "price": "17",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/89z8SAm0meyafj9OdHU-NgWUiyJsdLgS9MJ1PsGSStmaWkT_ADy_PBgA0QbfqnuoDnktXUVI1V2NGQbk8BS2V8gs0yaSUydn-k5-5WvlckWqgDiK_DoslfUSy5cdty2UgB2DzK8LKg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "72",
+                        "category": "URBAN",
+                        "name": "Black Street Pants",
+                        "price": "32",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "453",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/jwjRdqFJgafDVKiZX3ISgqUz7doJX0w3JgBie9nC1u-jFovmruKS-z00qiWCFELx1B5r6SZW1zQ-HKGTx0YO4rbzTfd9MIXdOHfJF42Kx3vVeGiIQH1iet7XbiSSqW8bo4kbwGv0VA",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "73",
+                        "category": "URBAN",
+                        "name": "Tricolor Jacket ",
+                        "price": "45",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/8lS-hd9buW03DlN9PMNhlvBaZ0QimL0b6Sx9pQGT6rIlZpdwFefVhyE9EYsz6hpyMlakUwprjsvMnUiZ6QTTDcGFfbpqE1OT4aby9DSz5QSYQz2T6zteBZZxpmWEQZSe78rkTkei8Q",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "74",
+                        "category": "URBAN",
+                        "name": "Ohm Hoodie",
+                        "price": "47",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "141",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/Kmre4mQS9aDTk6agHx8cvqA63esgmtIfkEiZ_n-Umh-CKCgEt2ZpgYxJ_6vfJPJUK77xpB7wUyMWCpsTotdRpF1t1_FAyv7nF3t59blGgtI6ai1_8QgqDWxtEmJRn5oyFw8aN-RViQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "75",
+                        "category": "URBAN",
+                        "name": "Streetwear Set",
+                        "price": "78",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh4.googleusercontent.com/tPJRfqgsTUDecBUhrWNPfhb4gOmAylRRYuJtK_hpuKVXjOKpwcG0CLlXV6NhZBXXXeHwjQOKlHRGcn5CuMhufIQi3M31WT-CXNioY6dg7CKeg0Jkv1BDe0RXs305FA1kSAqk-uK-Kg",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "76",
+                        "category": "URBAN",
+                        "name": "Red Velours Jacket",
+                        "price": "65",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "653",
+                        "description": "",
+                        "coverImage": "https://lh3.googleusercontent.com/j6khuO_quJTay6ytXFi_rKI6e6eSItFWxvAXysqVIPmMe5J-Hrvn3alZanzo2aX1pz0CLzKOXdHT5Sl9a_7dFmomkOLYMs8pMfPJp0s3mWZDJYEnDRSZpLYAOU1FFu-_VVMb1L52Jw",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "77",
+                        "category": "URBAN",
+                        "name": "Brown Hoodie",
+                        "price": "47",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/lfnKs--U4jVeGXCEfCVSa5p_A1WcqtmKs-bBExFputthqgMkkFpVW6UOvIPvE2GkuCayjIsubcvsvac00_9mLIgEQXrp3C5OBh8UL8QNPK3EwdhmJ7ulWoCAFrVPexAP7QeZ6bNmQQ",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "78",
+                        "category": "URBAN",
+                        "name": "Red Purse",
+                        "price": "18",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/YLISK9oEP1NWVwzc00s8yDBT2_a0AOp5g6A5vWdixeN7INrydYgy28PayDSKMQRDhejgO8cceSjYe9bmfnMnnrxZE4TYsAze2cDBEMpHjAs_kIpodEbS5eqDQfEtjjju2qaBR4lVMw",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "79",
+                        "category": "URBAN",
+                        "name": "Love Culture T-Shirt",
+                        "price": "23",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "13",
+                        "description": "",
+                        "coverImage": "https://lh6.googleusercontent.com/jVgYve2ioDJ1zFoT2FdOG7lis1CQm-2A5SbWW0U-4T_5LoiRaDlOBTf_NTj8XfEOOTokJuVcFTdJ2VCgyru0avVQmyNRYdMCwKNtOPnM9swruhWV_QZV53wEEzP2rPxMhgv7c8OlQw",
+                        "detailImages": [],
+                        "availableColors": []
+                    },
+                    {
+                        "id": "80",
+                        "category": "URBAN",
+                        "name": "Cadets Cap",
+                        "price": "19",
+                        "isSaved": false,
+                        "isAddedToCard": false,
+                        "discussions": "123",
+                        "description": "",
+                        "coverImage": "https://lh4.googleusercontent.com/R7WumRagtxARZOm3pcfH5UsK-xSmkElePM7Yl-OALVGGjB7huyfjIv5MKgme38pwvwlXgtQ5Cj44ZC5BhXptWtDHj2tii-GRpABQfAocouzWE03EWuUbuC0cN6mA1Lb7eVkTb3ve1A",
+                        "detailImages": [],
+                        "availableColors": []
+                    }
+
+                ]
+            }
+        ]
+    }
+}

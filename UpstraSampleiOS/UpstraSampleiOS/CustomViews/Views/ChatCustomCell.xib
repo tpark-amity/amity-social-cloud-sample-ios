@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomChatTableViewCell" rowHeight="215" id="TAF-n3-HDb" customClass="CustomChatTableViewCell" customModule="UpstraSampleiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TAF-n3-HDb" id="aFI-3O-haw">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lt-OH-E6o">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="215"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cQd-iT-Eri">
+                                <rect key="frame" x="0.0" y="0.0" width="371" height="215"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sp6-Zy-TL3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cQd-iT-Eri" secondAttribute="trailing" id="B0H-Rh-6F9"/>
+                            <constraint firstItem="cQd-iT-Eri" firstAttribute="top" secondItem="1lt-OH-E6o" secondAttribute="top" id="cVj-eN-Aem"/>
+                            <constraint firstItem="cQd-iT-Eri" firstAttribute="leading" secondItem="1lt-OH-E6o" secondAttribute="leading" id="jIb-Ql-s1N"/>
+                            <constraint firstAttribute="bottom" secondItem="cQd-iT-Eri" secondAttribute="bottom" id="uYI-cq-trL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1lt-OH-E6o" secondAttribute="trailing" id="95k-dA-xQf"/>
+                    <constraint firstAttribute="bottom" secondItem="1lt-OH-E6o" secondAttribute="bottom" id="P6i-hH-ecn"/>
+                    <constraint firstItem="1lt-OH-E6o" firstAttribute="top" secondItem="aFI-3O-haw" secondAttribute="top" id="Vfg-6W-6r5"/>
+                    <constraint firstItem="1lt-OH-E6o" firstAttribute="leading" secondItem="aFI-3O-haw" secondAttribute="leading" id="ssA-zJ-nch"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="cQd-iT-Eri" id="OBH-7v-CZb"/>
+            </connections>
+            <point key="canvasLocation" x="99.275362318840592" y="72.65625"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,11 @@
+framework module UpstraUIKit {
+  umbrella header "UpstraUIKit.h"
+
+  export *
+  module * { export * }
+}
+
+module UpstraUIKit.Swift {
+    header "UpstraUIKit-Swift.h"
+    requires objc
+}

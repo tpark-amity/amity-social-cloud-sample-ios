@@ -1,0 +1,814 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EkoChat
+import CommonCrypto
+import CoreFoundation
+import Dispatch
+@_exported import EkoChat
+import Foundation
+import MobileCoreServices
+import Security
+import Swift
+import UIKit
+import zlib
+@objc public enum SocketIOStatus : Swift.Int, Swift.CustomStringConvertible {
+  case notConnected
+  case disconnected
+  case connecting
+  case connected
+  public var active: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol SocketEnginePollable : EkoChat.SocketEngineSpec {
+  var invalidated: Swift.Bool { get }
+  var postWait: [Swift.String] { get set }
+  var session: Foundation.URLSession? { get }
+  var waitingForPoll: Swift.Bool { get set }
+  var waitingForPost: Swift.Bool { get set }
+  func doPoll()
+  func sendPollMessage(_ message: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData datas: [Foundation.Data])
+  func stopPolling()
+}
+extension SocketEnginePollable {
+  public func doPoll()
+  public func sendPollMessage(_ message: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData datas: [Foundation.Data])
+  public func stopPolling()
+}
+@objc final public class EkoLiveChannelQueryBuilder : ObjectiveC.NSObject {
+  @objc(initWithIncludingTags:excludingTags:includeDeleted:) public init(includingTags: [Swift.String], excludingTags: [Swift.String], includeDeleted: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc final public class SocketAckEmitter : ObjectiveC.NSObject {
+  final public var expected: Swift.Bool {
+    get
+  }
+  public init(socket: EkoChat.SocketIOClient, ackNum: Swift.Int)
+  final public func with(_ items: EkoChat.SocketData...)
+  @objc final public func with(_ items: [Any])
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers final public class OnAckCallback : ObjectiveC.NSObject {
+  @objc deinit
+  @objc final public func timingOut(after seconds: Swift.Double, callback: @escaping EkoChat.AckCallback)
+  @objc override dynamic public init()
+}
+public protocol SSLTrustValidator {
+  func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+}
+open class SSLCert {
+  public init(data: Foundation.Data)
+  public init(key: Security.SecKey)
+  @objc deinit
+}
+open class ScreamSSLSecurity : EkoChat.SSLTrustValidator {
+  public var validatedDN: Swift.Bool
+  public var validateEntireChain: Swift.Bool
+  convenience public init(usePublicKeys: Swift.Bool = false)
+  public init(certs: [EkoChat.SSLCert], usePublicKeys: Swift.Bool)
+  public func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+  @objc deinit
+}
+@objc open class SocketManager : ObjectiveC.NSObject, EkoChat.SocketManagerSpec, EkoChat.SocketParsable, EkoChat.SocketDataBufferable, EkoChat.ConfigSettable {
+  @objc public var defaultSocket: EkoChat.SocketIOClient {
+    @objc get
+  }
+  @objc final public let socketURL: Foundation.URL
+  public var config: EkoChat.SocketIOClientConfiguration {
+    get
+    set
+  }
+  @objc public var engine: EkoChat.SocketEngineSpec?
+  @objc public var forceNew: Swift.Bool
+  @objc public var handleQueue: Dispatch.DispatchQueue
+  @objc public var nsps: [Swift.String : EkoChat.SocketIOClient]
+  @objc public var reconnects: Swift.Bool
+  @objc public var reconnectWait: Swift.Int
+  @objc public var status: EkoChat.SocketIOStatus {
+    @objc get
+  }
+  public var waitingPackets: [EkoChat.SocketPacket]
+  public init(socketURL: Foundation.URL, config: EkoChat.SocketIOClientConfiguration = [])
+  @objc convenience public init(socketURL: Foundation.URL, config: [Swift.String : Any]?)
+  @objc deinit
+  @objc open func connect()
+  @objc open func connectSocket(_ socket: EkoChat.SocketIOClient)
+  @objc open func didDisconnect(reason: Swift.String)
+  @objc open func disconnect()
+  @objc open func disconnectSocket(_ socket: EkoChat.SocketIOClient)
+  @objc open func disconnectSocket(forNamespace nsp: Swift.String)
+  open func emitAll(clientEvent event: EkoChat.SocketClientEvent, data: [Any])
+  open func emitAll(_ event: Swift.String, _ items: EkoChat.SocketData...)
+  @objc open func emitAll(_ event: Swift.String, withItems items: [Any])
+  @objc open func engineDidClose(reason: Swift.String)
+  @objc open func engineDidError(reason: Swift.String)
+  @objc open func engineDidOpen(reason: Swift.String)
+  @objc open func engineDidReceivePong()
+  @objc open func engineDidSendPing()
+  @objc open func parseEngineMessage(_ msg: Swift.String)
+  @objc open func parseEngineBinaryData(_ data: Foundation.Data)
+  @objc open func reconnect()
+  @discardableResult
+  @objc open func removeSocket(_ socket: EkoChat.SocketIOClient) -> EkoChat.SocketIOClient?
+  open func setConfigs(_ config: EkoChat.SocketIOClientConfiguration)
+  @objc open func socket(forNamespace nsp: Swift.String) -> EkoChat.SocketIOClient
+  @objc override dynamic public init()
+}
+@objc final public class EkoLiveChannelQuery : EkoChat.EkoChannelQuery {
+  @objc(initWithBuilder:client:) public init(builder: EkoChat.EkoLiveChannelQueryBuilder, client: EkoChat.EkoClient)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum SocketEnginePacketType : Swift.Int {
+  case open
+  case close
+  case ping
+  case pong
+  case message
+  case upgrade
+  case noop
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+}
+@objc open class SocketIOClient : ObjectiveC.NSObject, EkoChat.SocketIOClientSpec {
+  @objc final public let nsp: Swift.String
+  @objc public var sid: Swift.String {
+    @objc get
+  }
+  public var anyHandler: ((EkoChat.SocketAnyEvent) -> ())? {
+    get
+  }
+  public var handlers: [EkoChat.SocketEventHandler] {
+    get
+  }
+  @objc weak public var manager: EkoChat.SocketManagerSpec? {
+    get
+  }
+  @objc public var status: EkoChat.SocketIOStatus {
+    @objc get
+  }
+  @objc public init(manager: EkoChat.SocketManagerSpec, nsp: Swift.String)
+  @objc deinit
+  @objc open func connect()
+  @objc open func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> ())?)
+  open func didConnect(toNamespace namespace: Swift.String)
+  open func didDisconnect(reason: Swift.String)
+  @objc open func disconnect()
+  open func emit(_ event: Swift.String, _ items: EkoChat.SocketData...)
+  @objc open func emit(_ event: Swift.String, with items: [Any])
+  open func emitWithAck(_ event: Swift.String, _ items: EkoChat.SocketData...) -> EkoChat.OnAckCallback
+  @objc open func emitWithAck(_ event: Swift.String, with items: [Any]) -> EkoChat.OnAckCallback
+  open func emitAck(_ ack: Swift.Int, with items: [Any])
+  @objc open func handleAck(_ ack: Swift.Int, data: [Any])
+  open func handleClientEvent(_ event: EkoChat.SocketClientEvent, data: [Any])
+  @objc open func handleEvent(_ event: Swift.String, data: [Any], isInternalMessage: Swift.Bool, withAck ack: Swift.Int = -1)
+  open func handlePacket(_ packet: EkoChat.SocketPacket)
+  @objc open func leaveNamespace()
+  @objc open func joinNamespace()
+  open func off(clientEvent event: EkoChat.SocketClientEvent)
+  @objc open func off(_ event: Swift.String)
+  @objc open func off(id: Foundation.UUID)
+  @discardableResult
+  @objc open func on(_ event: Swift.String, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  @discardableResult
+  open func on(clientEvent event: EkoChat.SocketClientEvent, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  @discardableResult
+  open func once(clientEvent event: EkoChat.SocketClientEvent, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  @discardableResult
+  @objc open func once(_ event: Swift.String, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  @objc open func onAny(_ handler: @escaping (EkoChat.SocketAnyEvent) -> ())
+  @available(*, unavailable, message: "Call the manager's reconnect method")
+  @objc open func reconnect()
+  @objc open func removeAllHandlers()
+  @objc open func setReconnecting(reason: Swift.String)
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers open class SSLSecurity : ObjectiveC.NSObject {
+  final public let security: EkoChat.ScreamSSLSecurity
+  @objc convenience public init(usePublicKeys: Swift.Bool = true)
+  convenience public init(certs: [EkoChat.SSLCert], usePublicKeys: Swift.Bool)
+  public func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+public enum SocketAckStatus : Swift.String {
+  case noAck
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public class MultipartRequestBuilder : ObjectiveC.NSObject {
+  @objc public init(files: [EkoChat.UploadableFile], params: [Swift.String : Any]?, endpoint: Swift.String, accessToken: Swift.String)
+  @objc final public func build() -> Foundation.URLRequest?
+  @objc deinit
+  @objc override dynamic public init()
+}
+public enum SocketIOClientOption {
+  case compress
+  case connectParams([Swift.String : Any])
+  case cookies([Foundation.HTTPCookie])
+  case extraHeaders([Swift.String : Swift.String])
+  case forceNew(Swift.Bool)
+  case forcePolling(Swift.Bool)
+  case forceWebsockets(Swift.Bool)
+  case handleQueue(Dispatch.DispatchQueue)
+  case log(Swift.Bool)
+  case logger(EkoChat.SocketLogger)
+  case path(Swift.String)
+  case reconnects(Swift.Bool)
+  case reconnectAttempts(Swift.Int)
+  case reconnectWait(Swift.Int)
+  case secure(Swift.Bool)
+  case security(EkoChat.SSLSecurity)
+  case selfSigned(Swift.Bool)
+  case sessionDelegate(Foundation.URLSessionDelegate)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (lhs: EkoChat.SocketIOClientOption, rhs: EkoChat.SocketIOClientOption) -> Swift.Bool
+}
+public struct SocketPacket : Swift.CustomStringConvertible {
+  public let nsp: Swift.String
+  public let id: Swift.Int
+  public let type: EkoChat.SocketPacket.PacketType
+  public var binary: [Foundation.Data] {
+    get
+  }
+  public var data: [Any] {
+    get
+  }
+  public var args: [Any] {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var event: Swift.String {
+    get
+  }
+  public var packetString: Swift.String {
+    get
+  }
+}
+extension SocketPacket {
+  public enum PacketType : Swift.Int {
+    case connect
+    case disconnect
+    case event
+    case ack
+    case error
+    case binaryEvent
+    case binaryAck
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+public protocol SocketEngineWebsocket : EkoChat.SocketEngineSpec, EkoChat.WebSocketDelegate {
+  func sendWebSocketMessage(_ str: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData datas: [Foundation.Data])
+}
+extension SocketEngineWebsocket {
+  public func sendWebSocketMessage(_ str: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData datas: [Foundation.Data])
+  public func websocketDidReceiveMessage(socket: EkoChat.WebSocketClient, text: Swift.String)
+  public func websocketDidReceiveData(socket: EkoChat.WebSocketClient, data: Foundation.Data)
+}
+@objc public protocol SocketEngineClient {
+  @objc func engineDidError(reason: Swift.String)
+  @objc func engineDidClose(reason: Swift.String)
+  @objc func engineDidOpen(reason: Swift.String)
+  @objc func engineDidReceivePong()
+  @objc func engineDidSendPing()
+  @objc func parseEngineMessage(_ msg: Swift.String)
+  @objc func parseEngineBinaryData(_ data: Foundation.Data)
+}
+public let WebsocketDidConnectNotification: Swift.String
+public let WebsocketDidDisconnectNotification: Swift.String
+public let WebsocketDisconnectionErrorKeyName: Swift.String
+public enum CloseCode : Swift.UInt16 {
+  case normal
+  case goingAway
+  case protocolError
+  case protocolUnhandledType
+  case noStatusReceived
+  case encoding
+  case policyViolated
+  case messageTooBig
+  public typealias RawValue = Swift.UInt16
+  public init?(rawValue: Swift.UInt16)
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum ErrorType : Swift.Error {
+  case outputStreamWriteError
+  case compressionError
+  case invalidSSLError
+  case writeTimeoutError
+  case protocolError
+  case upgradeError
+  case closeError
+  public static func == (a: EkoChat.ErrorType, b: EkoChat.ErrorType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct WSError : Swift.Error {
+  public let type: EkoChat.ErrorType
+  public let message: Swift.String
+  public let code: Swift.Int
+}
+public protocol WebSocketClient : AnyObject {
+  var delegate: EkoChat.WebSocketDelegate? { get set }
+  var disableSSLCertValidation: Swift.Bool { get set }
+  var overrideTrustHostname: Swift.Bool { get set }
+  var desiredTrustHostname: Swift.String? { get set }
+  var security: EkoChat.SSLTrustValidator? { get set }
+  var enabledSSLCipherSuites: [Security.SSLCipherSuite]? { get set }
+  var isConnected: Swift.Bool { get }
+  func connect()
+  func disconnect(forceTimeout: Foundation.TimeInterval?, closeCode: Swift.UInt16)
+  func write(string: Swift.String, completion: (() -> ())?)
+  func write(data: Foundation.Data, completion: (() -> ())?)
+  func write(ping: Foundation.Data, completion: (() -> ())?)
+  func write(pong: Foundation.Data, completion: (() -> ())?)
+}
+extension WebSocketClient {
+  public func write(string: Swift.String)
+  public func write(data: Foundation.Data)
+  public func write(ping: Foundation.Data)
+  public func write(pong: Foundation.Data)
+  public func disconnect()
+}
+public struct SSLSettings {
+}
+public protocol WSStreamDelegate : AnyObject {
+  func newBytesInStream()
+  func streamDidError(error: Swift.Error?)
+}
+public protocol WSStream {
+  var delegate: EkoChat.WSStreamDelegate? { get set }
+  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: EkoChat.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  func write(data: Foundation.Data) -> Swift.Int
+  func read() -> Foundation.Data?
+  func cleanup()
+  func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers open class FoundationStream : ObjectiveC.NSObject, EkoChat.WSStream, Foundation.StreamDelegate {
+  weak public var delegate: EkoChat.WSStreamDelegate?
+  public var enableSOCKSProxy: Swift.Bool
+  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: EkoChat.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  public func write(data: Foundation.Data) -> Swift.Int
+  public func read() -> Foundation.Data?
+  public func cleanup()
+  public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+  @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol WebSocketDelegate : AnyObject {
+  func websocketDidConnect(socket: EkoChat.WebSocketClient)
+  func websocketDidDisconnect(socket: EkoChat.WebSocketClient, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: EkoChat.WebSocketClient, text: Swift.String)
+  func websocketDidReceiveData(socket: EkoChat.WebSocketClient, data: Foundation.Data)
+}
+public protocol WebSocketPongDelegate : AnyObject {
+  func websocketDidReceivePong(socket: EkoChat.WebSocketClient, data: Foundation.Data?)
+}
+public protocol WebSocketAdvancedDelegate : AnyObject {
+  func websocketDidConnect(socket: EkoChat.WebSocket)
+  func websocketDidDisconnect(socket: EkoChat.WebSocket, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: EkoChat.WebSocket, text: Swift.String, response: EkoChat.WebSocket.WSResponse)
+  func websocketDidReceiveData(socket: EkoChat.WebSocket, data: Foundation.Data, response: EkoChat.WebSocket.WSResponse)
+  func websocketHttpUpgrade(socket: EkoChat.WebSocket, request: Swift.String)
+  func websocketHttpUpgrade(socket: EkoChat.WebSocket, response: Swift.String)
+}
+@objc open class WebSocket : ObjectiveC.NSObject, Foundation.StreamDelegate, EkoChat.WebSocketClient, EkoChat.WSStreamDelegate {
+  public enum OpCode : Swift.UInt8 {
+    case continueFrame
+    case textFrame
+    case binaryFrame
+    case connectionClose
+    case ping
+    case pong
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public static let ErrorDomain: Swift.String
+  public var callbackQueue: Dispatch.DispatchQueue
+  @_hasMissingDesignatedInitializers public class WSResponse {
+    public var code: EkoChat.WebSocket.OpCode
+    public var frameCount: Swift.Int
+    public var buffer: Foundation.NSMutableData?
+    final public let firstFrame: Foundation.Date
+    @objc deinit
+  }
+  weak public var delegate: EkoChat.WebSocketDelegate?
+  weak public var advancedDelegate: EkoChat.WebSocketAdvancedDelegate?
+  weak public var pongDelegate: EkoChat.WebSocketPongDelegate?
+  public var onConnect: (() -> Swift.Void)?
+  public var onDisconnect: ((Swift.Error?) -> Swift.Void)?
+  public var onText: ((Swift.String) -> Swift.Void)?
+  public var onData: ((Foundation.Data) -> Swift.Void)?
+  public var onPong: ((Foundation.Data?) -> Swift.Void)?
+  public var disableSSLCertValidation: Swift.Bool
+  public var overrideTrustHostname: Swift.Bool
+  public var desiredTrustHostname: Swift.String?
+  public var enableCompression: Swift.Bool
+  public var security: EkoChat.SSLTrustValidator?
+  public var enabledSSLCipherSuites: [Security.SSLCipherSuite]?
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public var request: Foundation.URLRequest
+  public var currentURL: Foundation.URL {
+    get
+  }
+  public var respondToPingWithPong: Swift.Bool
+  public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: EkoChat.WSStream = FoundationStream())
+  convenience public init(url: Foundation.URL, protocols: [Swift.String]? = nil)
+  convenience public init(url: Foundation.URL, writeQueueQOS: Foundation.QualityOfService, protocols: [Swift.String]? = nil)
+  open func connect()
+  open func disconnect(forceTimeout: Foundation.TimeInterval? = nil, closeCode: Swift.UInt16 = CloseCode.normal.rawValue)
+  open func write(string: Swift.String, completion: (() -> ())? = nil)
+  open func write(data: Foundation.Data, completion: (() -> ())? = nil)
+  open func write(ping: Foundation.Data, completion: (() -> ())? = nil)
+  open func write(pong: Foundation.Data, completion: (() -> ())? = nil)
+  public func newBytesInStream()
+  public func streamDidError(error: Swift.Error?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol SocketEngineSpec {
+  @objc var client: EkoChat.SocketEngineClient? { get set }
+  @objc var closed: Swift.Bool { get }
+  @objc var compress: Swift.Bool { get }
+  @objc var connected: Swift.Bool { get }
+  @objc var connectParams: [Swift.String : Any]? { get set }
+  @objc var cookies: [Foundation.HTTPCookie]? { get }
+  @objc var engineQueue: Dispatch.DispatchQueue { get }
+  @objc var extraHeaders: [Swift.String : Swift.String]? { get set }
+  @objc var fastUpgrade: Swift.Bool { get }
+  @objc var forcePolling: Swift.Bool { get }
+  @objc var forceWebsockets: Swift.Bool { get }
+  @objc var polling: Swift.Bool { get }
+  @objc var probing: Swift.Bool { get }
+  @objc var sid: Swift.String { get }
+  @objc var socketPath: Swift.String { get }
+  @objc var urlPolling: Foundation.URL { get }
+  @objc var urlWebSocket: Foundation.URL { get }
+  @objc @available(*, deprecated, message: "No longer needed, if we're not polling, then we must be doing websockets")
+  var websocket: Swift.Bool { get }
+  @objc var ws: EkoChat.WebSocket? { get }
+  @objc init(client: EkoChat.SocketEngineClient, url: Foundation.URL, options: [Swift.String : Any]?)
+  @objc func connect()
+  @objc func didError(reason: Swift.String)
+  @objc func disconnect(reason: Swift.String)
+  @objc func doFastUpgrade()
+  @objc func flushWaitingForPostToWebSocket()
+  @objc func parseEngineData(_ data: Foundation.Data)
+  @objc func parseEngineMessage(_ message: Swift.String)
+  @objc func write(_ msg: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData data: [Foundation.Data])
+}
+public protocol SocketData {
+  func socketRepresentation() throws -> EkoChat.SocketData
+}
+extension SocketData {
+  public func socketRepresentation() -> EkoChat.SocketData
+}
+extension Array : EkoChat.SocketData {
+}
+extension Bool : EkoChat.SocketData {
+}
+extension Dictionary : EkoChat.SocketData {
+}
+extension Double : EkoChat.SocketData {
+}
+extension Int : EkoChat.SocketData {
+}
+extension NSArray : EkoChat.SocketData {
+}
+extension Data : EkoChat.SocketData {
+}
+extension NSData : EkoChat.SocketData {
+}
+extension NSDictionary : EkoChat.SocketData {
+}
+extension NSString : EkoChat.SocketData {
+}
+extension NSNull : EkoChat.SocketData {
+}
+extension String : EkoChat.SocketData {
+}
+public typealias AckCallback = ([Any]) -> ()
+public typealias NormalCallback = ([Any], EkoChat.SocketAckEmitter) -> ()
+public protocol SocketIOClientSpec : AnyObject {
+  var anyHandler: ((EkoChat.SocketAnyEvent) -> ())? { get }
+  var handlers: [EkoChat.SocketEventHandler] { get }
+  var manager: EkoChat.SocketManagerSpec? { get }
+  var nsp: Swift.String { get }
+  var status: EkoChat.SocketIOStatus { get }
+  func connect()
+  func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> ())?)
+  func didConnect(toNamespace namespace: Swift.String)
+  func didDisconnect(reason: Swift.String)
+  func didError(reason: Swift.String)
+  func disconnect()
+  func emit(_ event: Swift.String, _ items: EkoChat.SocketData...)
+  func emitAck(_ ack: Swift.Int, with items: [Any])
+  func emitWithAck(_ event: Swift.String, _ items: EkoChat.SocketData...) -> EkoChat.OnAckCallback
+  func handleAck(_ ack: Swift.Int, data: [Any])
+  func handleClientEvent(_ event: EkoChat.SocketClientEvent, data: [Any])
+  func handleEvent(_ event: Swift.String, data: [Any], isInternalMessage: Swift.Bool, withAck ack: Swift.Int)
+  func handlePacket(_ packet: EkoChat.SocketPacket)
+  func leaveNamespace()
+  func joinNamespace()
+  func off(clientEvent event: EkoChat.SocketClientEvent)
+  func off(_ event: Swift.String)
+  func off(id: Foundation.UUID)
+  func on(_ event: Swift.String, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  func on(clientEvent event: EkoChat.SocketClientEvent, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  func once(clientEvent event: EkoChat.SocketClientEvent, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  func once(_ event: Swift.String, callback: @escaping EkoChat.NormalCallback) -> Foundation.UUID
+  func onAny(_ handler: @escaping (EkoChat.SocketAnyEvent) -> ())
+  func removeAllHandlers()
+  func setReconnecting(reason: Swift.String)
+}
+extension SocketIOClientSpec {
+  public func didError(reason: Swift.String)
+}
+public enum SocketClientEvent : Swift.String {
+  case connect
+  case disconnect
+  case error
+  case ping
+  case pong
+  case reconnect
+  case reconnectAttempt
+  case statusChange
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+@objc final public class EkoCommunityChannelQueryBuilder : ObjectiveC.NSObject {
+  @objc(initWithFilter:includingTags:excludingTags:includeDeleted:) public init(filter: EkoChat.EkoChannelQueryFilter, includingTags: [Swift.String], excludingTags: [Swift.String], includeDeleted: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol SocketManagerSpec : AnyObject, EkoChat.SocketEngineClient {
+  @objc var defaultSocket: EkoChat.SocketIOClient { get }
+  @objc var engine: EkoChat.SocketEngineSpec? { get set }
+  @objc var forceNew: Swift.Bool { get set }
+  @objc var handleQueue: Dispatch.DispatchQueue { get set }
+  @objc var nsps: [Swift.String : EkoChat.SocketIOClient] { get set }
+  @objc var reconnects: Swift.Bool { get set }
+  @objc var reconnectWait: Swift.Int { get set }
+  @objc var socketURL: Foundation.URL { get }
+  @objc var status: EkoChat.SocketIOStatus { get }
+  @objc func connect()
+  @objc func connectSocket(_ socket: EkoChat.SocketIOClient)
+  @objc func didDisconnect(reason: Swift.String)
+  @objc func disconnect()
+  @objc func disconnectSocket(_ socket: EkoChat.SocketIOClient)
+  @objc func disconnectSocket(forNamespace nsp: Swift.String)
+  @objc func emitAll(_ event: Swift.String, withItems items: [Any])
+  @objc func reconnect()
+  @objc @discardableResult
+  func removeSocket(_ socket: EkoChat.SocketIOClient) -> EkoChat.SocketIOClient?
+  @objc func socket(forNamespace nsp: Swift.String) -> EkoChat.SocketIOClient
+}
+@objc @_hasMissingDesignatedInitializers final public class SocketAnyEvent : ObjectiveC.NSObject {
+  @objc final public let event: Swift.String
+  @objc final public let items: [Any]?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc final public class EkoCommunityChannelQuery : EkoChat.EkoChannelQuery {
+  @objc(initWithBuilder:client:) public init(builder: EkoChat.EkoCommunityChannelQueryBuilder, client: EkoChat.EkoClient)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol SocketLogger : AnyObject {
+  var log: Swift.Bool { get set }
+  func log(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+  func error(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+}
+extension SocketLogger {
+  public func log(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+  public func error(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+}
+public struct SocketIOClientConfiguration : Swift.ExpressibleByArrayLiteral, Swift.Collection, Swift.MutableCollection {
+  public typealias Element = EkoChat.SocketIOClientOption
+  public typealias Index = Swift.Array<EkoChat.SocketIOClientOption>.Index
+  public typealias Iterator = Swift.Array<EkoChat.SocketIOClientOption>.Iterator
+  public typealias SubSequence = Swift.Array<EkoChat.SocketIOClientOption>.SubSequence
+  public var startIndex: EkoChat.SocketIOClientConfiguration.Index {
+    get
+  }
+  public var endIndex: EkoChat.SocketIOClientConfiguration.Index {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var count: EkoChat.SocketIOClientConfiguration.Index.Stride {
+    get
+  }
+  public var first: EkoChat.SocketIOClientConfiguration.Element? {
+    get
+  }
+  public subscript(position: EkoChat.SocketIOClientConfiguration.Index) -> EkoChat.SocketIOClientConfiguration.Element {
+    get
+    set
+  }
+  public subscript(bounds: Swift.Range<EkoChat.SocketIOClientConfiguration.Index>) -> EkoChat.SocketIOClientConfiguration.SubSequence {
+    get
+    set
+  }
+  public init(arrayLiteral elements: EkoChat.SocketIOClientConfiguration.Element...)
+  public func makeIterator() -> EkoChat.SocketIOClientConfiguration.Iterator
+  public func index(after i: EkoChat.SocketIOClientConfiguration.Index) -> EkoChat.SocketIOClientConfiguration.Index
+  public mutating func insert(_ element: EkoChat.SocketIOClientConfiguration.Element, replacing replace: Swift.Bool = true)
+  public typealias ArrayLiteralElement = EkoChat.SocketIOClientConfiguration.Element
+  public typealias Indices = Swift.DefaultIndices<EkoChat.SocketIOClientConfiguration>
+}
+public protocol ConfigSettable {
+  mutating func setConfigs(_ config: EkoChat.SocketIOClientConfiguration)
+}
+public struct SocketEventHandler {
+  public let event: Swift.String
+  public let id: Foundation.UUID
+  public let callback: EkoChat.NormalCallback
+  public func executeCallback(with items: [Any], withAck ack: Swift.Int, withSocket socket: EkoChat.SocketIOClient)
+}
+@objc final public class SocketEngine : ObjectiveC.NSObject, Foundation.URLSessionDelegate, EkoChat.SocketEnginePollable, EkoChat.SocketEngineWebsocket, EkoChat.ConfigSettable {
+  @objc final public let engineQueue: Dispatch.DispatchQueue
+  @objc final public var connectParams: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc final public var extraHeaders: [Swift.String : Swift.String]?
+  final public var postWait: [Swift.String]
+  final public var waitingForPoll: Swift.Bool
+  final public var waitingForPost: Swift.Bool
+  @objc final public var closed: Swift.Bool {
+    get
+  }
+  @objc final public var compress: Swift.Bool {
+    get
+  }
+  @objc final public var connected: Swift.Bool {
+    get
+  }
+  @objc final public var cookies: [Foundation.HTTPCookie]? {
+    get
+  }
+  @objc final public var fastUpgrade: Swift.Bool {
+    get
+  }
+  @objc final public var forcePolling: Swift.Bool {
+    get
+  }
+  @objc final public var forceWebsockets: Swift.Bool {
+    get
+  }
+  final public var invalidated: Swift.Bool {
+    get
+  }
+  @objc final public var polling: Swift.Bool {
+    get
+  }
+  @objc final public var probing: Swift.Bool {
+    get
+  }
+  final public var session: Foundation.URLSession? {
+    get
+  }
+  @objc final public var sid: Swift.String {
+    get
+  }
+  @objc final public var socketPath: Swift.String {
+    get
+  }
+  @objc final public var urlPolling: Foundation.URL {
+    get
+  }
+  @objc final public var urlWebSocket: Foundation.URL {
+    get
+  }
+  @available(*, deprecated, message: "No longer needed, if we're not polling, then we must be doing websockets")
+  @objc final public var websocket: Swift.Bool {
+    get
+  }
+  @objc final public var ws: EkoChat.WebSocket? {
+    get
+  }
+  @objc weak final public var client: EkoChat.SocketEngineClient?
+  public init(client: EkoChat.SocketEngineClient, url: Foundation.URL, config: EkoChat.SocketIOClientConfiguration)
+  @objc convenience public init(client: EkoChat.SocketEngineClient, url: Foundation.URL, options: [Swift.String : Any]?)
+  @objc deinit
+  @objc final public func connect()
+  @objc final public func didError(reason: Swift.String)
+  @objc final public func disconnect(reason: Swift.String)
+  @objc final public func doFastUpgrade()
+  @objc final public func flushWaitingForPostToWebSocket()
+  @objc final public func parseEngineData(_ data: Foundation.Data)
+  @objc final public func parseEngineMessage(_ message: Swift.String)
+  final public func setConfigs(_ config: EkoChat.SocketIOClientConfiguration)
+  @objc final public func write(_ msg: Swift.String, withType type: EkoChat.SocketEnginePacketType, withData data: [Foundation.Data])
+  final public func websocketDidConnect(socket: EkoChat.WebSocketClient)
+  final public func websocketDidDisconnect(socket: EkoChat.WebSocketClient, error: Swift.Error?)
+  @objc override dynamic public init()
+}
+extension SocketEngine {
+  final public func URLSession(session: Foundation.URLSession, didBecomeInvalidWithError error: Foundation.NSError?)
+}
+public protocol SocketParsable : AnyObject {
+  func parseBinaryData(_ data: Foundation.Data) -> EkoChat.SocketPacket?
+  func parseSocketMessage(_ message: Swift.String) -> EkoChat.SocketPacket?
+}
+public enum SocketParsableError : Swift.Error {
+  case invalidDataArray
+  case invalidPacket
+  case invalidPacketType
+  public static func == (a: EkoChat.SocketParsableError, b: EkoChat.SocketParsableError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol SocketDataBufferable : AnyObject {
+  var waitingPackets: [EkoChat.SocketPacket] { get set }
+}
+extension SocketParsable where Self : EkoChat.SocketDataBufferable, Self : EkoChat.SocketManagerSpec {
+  public func parseSocketMessage(_ message: Swift.String) -> EkoChat.SocketPacket?
+  public func parseBinaryData(_ data: Foundation.Data) -> EkoChat.SocketPacket?
+}
+@objc public class UploadableFile : ObjectiveC.NSObject {
+  @objc public var identifier: Swift.String
+  @objc public var fileData: Foundation.Data
+  @objc public var fileName: Swift.String?
+  @objc public var mimeType: Swift.String
+  @objc public var metaData: [Swift.String : Any]
+  @objc public init(fileData: Foundation.Data, fileName: Swift.String?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class EkoFileUploadService : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func upload(files: [EkoChat.UploadableFile], params: [Swift.String : Any]?, endpoint: Swift.String, accessToken: Swift.String, progressHandler: ((Swift.Double) -> Swift.Void)?, completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
+  @objc public func attachProgressHandlerToUpload(uploadId: Swift.String, handler: @escaping (Swift.Double) -> Swift.Void)
+  @objc deinit
+}
+extension EkoChat.SocketIOStatus : Swift.Equatable {}
+extension EkoChat.SocketIOStatus : Swift.Hashable {}
+extension EkoChat.SocketIOStatus : Swift.RawRepresentable {}
+extension EkoChat.SocketEnginePacketType : Swift.Equatable {}
+extension EkoChat.SocketEnginePacketType : Swift.Hashable {}
+extension EkoChat.SocketEnginePacketType : Swift.RawRepresentable {}
+extension EkoChat.SocketAckStatus : Swift.Equatable {}
+extension EkoChat.SocketAckStatus : Swift.Hashable {}
+extension EkoChat.SocketAckStatus : Swift.RawRepresentable {}
+extension EkoChat.SocketIOClientOption : Swift.Equatable {}
+extension EkoChat.SocketIOClientOption : Swift.CustomStringConvertible {}
+extension EkoChat.SocketPacket.PacketType : Swift.Equatable {}
+extension EkoChat.SocketPacket.PacketType : Swift.Hashable {}
+extension EkoChat.SocketPacket.PacketType : Swift.RawRepresentable {}
+extension EkoChat.CloseCode : Swift.Equatable {}
+extension EkoChat.CloseCode : Swift.Hashable {}
+extension EkoChat.CloseCode : Swift.RawRepresentable {}
+extension EkoChat.ErrorType : Swift.Equatable {}
+extension EkoChat.ErrorType : Swift.Hashable {}
+extension EkoChat.WebSocket.OpCode : Swift.Equatable {}
+extension EkoChat.WebSocket.OpCode : Swift.Hashable {}
+extension EkoChat.WebSocket.OpCode : Swift.RawRepresentable {}
+extension EkoChat.SocketClientEvent : Swift.Equatable {}
+extension EkoChat.SocketClientEvent : Swift.Hashable {}
+extension EkoChat.SocketClientEvent : Swift.RawRepresentable {}
+extension EkoChat.SocketParsableError : Swift.Equatable {}
+extension EkoChat.SocketParsableError : Swift.Hashable {}
