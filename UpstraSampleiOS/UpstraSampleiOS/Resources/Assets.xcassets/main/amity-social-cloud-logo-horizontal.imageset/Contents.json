@@ -1,16 +1,15 @@
 {
   "images" : [
     {
+      "filename" : "amity-social-cloud-logo-horizontal.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "splash@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "splash@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
