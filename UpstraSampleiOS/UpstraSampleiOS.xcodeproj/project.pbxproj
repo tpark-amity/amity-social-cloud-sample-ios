@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21F4018D0F5C02523F05AA8C /* Pods_UpstraSampleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD14861C070BE7913E78D6D0 /* Pods_UpstraSampleiOS.framework */; };
 		2921875B255D226600F7F641 /* Eko.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2921875A255D226600F7F641 /* Eko.storyboard */; };
 		2921875E255D22AE00F7F641 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2921875D255D22AE00F7F641 /* GroupViewController.swift */; };
 		29218760255D2A3B00F7F641 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2921875F255D2A3B00F7F641 /* Article.storyboard */; };
@@ -76,7 +77,6 @@
 		29C1F28725653A04000BEEA4 /* MoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1F28625653A04000BEEA4 /* MoreHeaderTableViewCell.swift */; };
 		29C1F28925653A39000BEEA4 /* MoreItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1F28825653A39000BEEA4 /* MoreItemTableViewCell.swift */; };
 		29C838BF255AB70300A7B8E5 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C838BE255AB70300A7B8E5 /* ShopDetailViewController.swift */; };
-		F6C18F2FC886D899791679F1 /* Pods_UpstraSampleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F127967AECC30EDAEB8931C /* Pods_UpstraSampleiOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		123573125AA89485901D1E6C /* Pods-UpstraSampleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraSampleiOS.release.xcconfig"; path = "Target Support Files/Pods-UpstraSampleiOS/Pods-UpstraSampleiOS.release.xcconfig"; sourceTree = "<group>"; };
 		2921875A255D226600F7F641 /* Eko.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Eko.storyboard; sourceTree = "<group>"; };
 		2921875D255D22AE00F7F641 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		2921875F255D2A3B00F7F641 /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
@@ -166,9 +167,8 @@
 		29C1F28625653A04000BEEA4 /* MoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		29C1F28825653A39000BEEA4 /* MoreItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreItemTableViewCell.swift; sourceTree = "<group>"; };
 		29C838BE255AB70300A7B8E5 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
-		4F127967AECC30EDAEB8931C /* Pods_UpstraSampleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpstraSampleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D82C3DC4C36423BCB1EC00D6 /* Pods-UpstraSampleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraSampleiOS.release.xcconfig"; path = "Target Support Files/Pods-UpstraSampleiOS/Pods-UpstraSampleiOS.release.xcconfig"; sourceTree = "<group>"; };
-		F6B4C4033A9BD082CF4F7446 /* Pods-UpstraSampleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraSampleiOS.debug.xcconfig"; path = "Target Support Files/Pods-UpstraSampleiOS/Pods-UpstraSampleiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A029A9130F9FEB7D73415442 /* Pods-UpstraSampleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraSampleiOS.debug.xcconfig"; path = "Target Support Files/Pods-UpstraSampleiOS/Pods-UpstraSampleiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DD14861C070BE7913E78D6D0 /* Pods_UpstraSampleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpstraSampleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C18F2FC886D899791679F1 /* Pods_UpstraSampleiOS.framework in Frameworks */,
+				21F4018D0F5C02523F05AA8C /* Pods_UpstraSampleiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 				295C8C6625593FA200984670 /* UpstraSampleiOS */,
 				295C8C6525593FA200984670 /* Products */,
 				C77DF81B16CABB74BE5EEDE0 /* Pods */,
-				2D57BC4CDF1D1CB0CF554202 /* Frameworks */,
+				CED4A20D70A2199AAC8BB0B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -504,21 +504,21 @@
 			path = More;
 			sourceTree = "<group>";
 		};
-		2D57BC4CDF1D1CB0CF554202 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F127967AECC30EDAEB8931C /* Pods_UpstraSampleiOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C77DF81B16CABB74BE5EEDE0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F6B4C4033A9BD082CF4F7446 /* Pods-UpstraSampleiOS.debug.xcconfig */,
-				D82C3DC4C36423BCB1EC00D6 /* Pods-UpstraSampleiOS.release.xcconfig */,
+				A029A9130F9FEB7D73415442 /* Pods-UpstraSampleiOS.debug.xcconfig */,
+				123573125AA89485901D1E6C /* Pods-UpstraSampleiOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CED4A20D70A2199AAC8BB0B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD14861C070BE7913E78D6D0 /* Pods_UpstraSampleiOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,12 +528,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 295C8C7825593FA300984670 /* Build configuration list for PBXNativeTarget "UpstraSampleiOS" */;
 			buildPhases = (
-				1EEF73ECE82F0B5149959F85 /* [CP] Check Pods Manifest.lock */,
+				6029057C1B3F9D30B3855F2F /* [CP] Check Pods Manifest.lock */,
 				295C8C6025593FA200984670 /* Sources */,
 				295C8C6125593FA200984670 /* Frameworks */,
 				295C8C6225593FA200984670 /* Resources */,
-				8C8CB60E4B9F71910005E5A9 /* [CP] Embed Pods Frameworks */,
 				29A6529225C41A6900702B68 /* Embed Frameworks */,
+				E198A6E9C7A8C68FBD8831FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -612,7 +612,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EEF73ECE82F0B5149959F85 /* [CP] Check Pods Manifest.lock */ = {
+		6029057C1B3F9D30B3855F2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -634,7 +634,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C8CB60E4B9F71910005E5A9 /* [CP] Embed Pods Frameworks */ = {
+		E198A6E9C7A8C68FBD8831FE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -846,7 +846,7 @@
 		};
 		295C8C7925593FA300984670 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B4C4033A9BD082CF4F7446 /* Pods-UpstraSampleiOS.debug.xcconfig */;
+			baseConfigurationReference = A029A9130F9FEB7D73415442 /* Pods-UpstraSampleiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -869,7 +869,7 @@
 		};
 		295C8C7A25593FA300984670 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D82C3DC4C36423BCB1EC00D6 /* Pods-UpstraSampleiOS.release.xcconfig */;
+			baseConfigurationReference = 123573125AA89485901D1E6C /* Pods-UpstraSampleiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
