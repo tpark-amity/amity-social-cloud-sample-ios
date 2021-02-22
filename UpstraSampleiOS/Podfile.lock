@@ -9,13 +9,13 @@ PODS:
     - ImageSlideshow/Core
   - ImageSlideshow/Core (1.9.2)
   - lottie-ios (3.2.0)
-  - UpstraUIKit (1.9.1)
+  - UpstraUIKit (1.9.2)
 
 DEPENDENCIES:
   - ImageSlideshow (~> 1.9.0)
   - ImageSlideshow/Alamofire
   - lottie-ios
-  - UpstraUIKit (= 1.9.1)
+  - UpstraUIKit (= 1.9.2)
 
 SPEC REPOS:
   https://github.com/EkoCommunications/EkoMessagingSDKUIKit.git:
@@ -31,8 +31,8 @@ SPEC CHECKSUMS:
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   lottie-ios: b6b911246246a90a1d25e7388afe6d9ef003d293
-  UpstraUIKit: e76bcd0af1ca2b703b0315c1e9cb9ff6d84ceee7
+  UpstraUIKit: 3ad9e252ef96cd2203b3d95bc21423d67445b630
 
-PODFILE CHECKSUM: 853c713cc9d2d9ea53104a51d7d5f0364b8b6200
+PODFILE CHECKSUM: 012197ab84435cc9cb65d0cd043e020165c83e9b
 
 COCOAPODS: 1.10.1

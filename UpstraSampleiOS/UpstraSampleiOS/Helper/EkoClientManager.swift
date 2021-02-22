@@ -6,7 +6,6 @@ import EkoChat
 let EKO_API_KEY = "b3babb0b3a89f4341d31dc1a01091edcd70f8de7b23d697f"
 let USER_NAME = UIDevice.current.name
 let USER_ID = UIDevice.current.identifierForVendor!.uuidString
-let EKO_SDK_ENIVIRONEMENT = ["sdk_environment":"https://api.ekomedia.technology/"]
 let DISPLAY_NAME_KEY = "displayName"
 class EkoClientManager {
     var client:EkoClient? = EkoClient(apiKey: EKO_API_KEY)
@@ -19,7 +18,6 @@ class EkoClientManager {
    
     init() {
         let theme = EkoTheme(primary: UIColor.black, secondary: nil, alert: nil, highlight: nil, base: nil, baseInverse: nil, messageBubble: nil, messageBubbleInverse: nil)
-        EkoClient.setEkoConfig(EKO_SDK_ENIVIRONEMENT)
         UpstraUIKitManager.setup(EKO_API_KEY)
         UpstraUIKitManager.registerDevice(withUserId: USER_ID, displayName:USER_NAME)
         UpstraUIKitManager.set(theme: theme)
