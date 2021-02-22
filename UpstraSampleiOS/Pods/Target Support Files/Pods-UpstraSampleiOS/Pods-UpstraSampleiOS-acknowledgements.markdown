@@ -70,6 +70,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## UpstraUIKit
+
+Copyright 2020
+Permission is granted to...
+
+
 ## lottie-ios
 
                                  Apache License

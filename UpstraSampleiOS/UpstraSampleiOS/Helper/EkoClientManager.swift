@@ -4,8 +4,8 @@ import UpstraUIKit
 import EkoChat
 
 let EKO_API_KEY = "b3babb0b3a89f4341d31dc1a01091edcd70f8de7b23d697f"
-let USER_NAME = "vodworks-admin"
-let USER_ID = "_admin_vodworks-admin"
+let USER_NAME = UIDevice.current.name
+let USER_ID = UIDevice.current.identifierForVendor!.uuidString
 let EKO_SDK_ENIVIRONEMENT = ["sdk_environment":"https://api.ekomedia.technology/"]
 let DISPLAY_NAME_KEY = "displayName"
 class EkoClientManager {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,12 +61,6 @@
 		29A137C8255EC61700869B2A /* MainAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A137C7255EC61700869B2A /* MainAppModel.swift */; };
 		29A137CA255ECB9400869B2A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A137C9255ECB9400869B2A /* BaseViewController.swift */; };
 		29A137CC255ECD8500869B2A /* ArticleContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A137CB255ECD8500869B2A /* ArticleContentViewController.swift */; };
-		29A6529025C41A6900702B68 /* UpstraUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528C25C4199200702B68 /* UpstraUIKit.xcframework */; };
-		29A6529125C41A6900702B68 /* UpstraUIKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528C25C4199200702B68 /* UpstraUIKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		29A6529325C41A6B00702B68 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528A25C4198F00702B68 /* Realm.xcframework */; };
-		29A6529425C41A6B00702B68 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528A25C4198F00702B68 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		29A6529525C41A6D00702B68 /* EkoChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528B25C4199000702B68 /* EkoChat.xcframework */; };
-		29A6529625C41A6D00702B68 /* EkoChat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29A6528B25C4199000702B68 /* EkoChat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		29A96ED22567A4D500B60C9F /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29A96ECD2567A4D200B60C9F /* SF-Pro-Display-Heavy.otf */; };
 		29A96ED32567A4D500B60C9F /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29A96ECE2567A4D300B60C9F /* SF-Pro-Display-Black.otf */; };
 		29A96ED42567A4D500B60C9F /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29A96ECF2567A4D300B60C9F /* SF-Pro-Display-Regular.otf */; };
@@ -92,9 +86,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				29A6529625C41A6D00702B68 /* EkoChat.xcframework in Embed Frameworks */,
-				29A6529125C41A6900702B68 /* UpstraUIKit.xcframework in Embed Frameworks */,
-				29A6529425C41A6B00702B68 /* Realm.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,9 +151,6 @@
 		29A137C7255EC61700869B2A /* MainAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppModel.swift; sourceTree = "<group>"; };
 		29A137C9255ECB9400869B2A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		29A137CB255ECD8500869B2A /* ArticleContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleContentViewController.swift; sourceTree = "<group>"; };
-		29A6528A25C4198F00702B68 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Realm.xcframework; sourceTree = "<group>"; };
-		29A6528B25C4199000702B68 /* EkoChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = EkoChat.xcframework; sourceTree = "<group>"; };
-		29A6528C25C4199200702B68 /* UpstraUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = UpstraUIKit.xcframework; sourceTree = "<group>"; };
 		29A96ECD2567A4D200B60C9F /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
 		29A96ECE2567A4D300B60C9F /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		29A96ECF2567A4D300B60C9F /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -188,10 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A6529325C41A6B00702B68 /* Realm.xcframework in Frameworks */,
-				29A6529525C41A6D00702B68 /* EkoChat.xcframework in Frameworks */,
 				F6C18F2FC886D899791679F1 /* Pods_UpstraSampleiOS.framework in Frameworks */,
-				29A6529025C41A6900702B68 /* UpstraUIKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,9 +474,6 @@
 		29A6528925C4197400702B68 /* UpstraSDK */ = {
 			isa = PBXGroup;
 			children = (
-				29A6528B25C4199000702B68 /* EkoChat.xcframework */,
-				29A6528A25C4198F00702B68 /* Realm.xcframework */,
-				29A6528C25C4199200702B68 /* UpstraUIKit.xcframework */,
 			);
 			path = UpstraSDK;
 			sourceTree = "<group>";

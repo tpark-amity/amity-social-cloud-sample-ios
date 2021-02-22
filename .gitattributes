@@ -1,3 +1,0 @@
-UpstraSampleiOS/Pods filter=lfs diff=lfs merge=lfs -text
-UpstraSampleiOS/Pods/EkoChat/Realm.framework/Realm filter=lfs diff=lfs merge=lfs -text
-UpstraSampleiOS/UpstraSampleiOS/Resources/SDK/UpstraSDK/Realm.xcframework/ios-arm64_armv7/Realm.framework/Realm filter=lfs diff=lfs merge=lfs -text
